@@ -1,0 +1,82 @@
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+
+/* Posts and pages */
+
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 $base__space-unit;
+}
+
+.updated:not(.published){
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+// .page-content,
+// .entry-content,
+// .entry-summary {
+// 	margin: $base__space-unit 0 0;
+// }
+
+.page-links {
+	clear: both;
+	margin: 0 0 $base__space-unit;
+}
+
+.entry-content{
+	margin:3rem auto;
+	max-width:800px;
+}
+
+/* Asides */
+
+.blog .format-aside .entry-title,
+.archive .format-aside .entry-title {
+	display: none;
+}
+
+/* Comments */
+
+.comment-content a {
+	word-wrap: break-word;
+}
+.bypostauthor {
+	display: block;
+}
+
+.footer-container{
+	display:flex;
+	margin-left:auto;
+	margin-right:auto;
+	width:1120px;
+}
+.contact{
+	width:25%;
+}
+.bhour{
+	width:25%;
+}
+.textlogo{
+	width:50%;
+	text-align:right;
+	margin-top:20px;
+}
+.textlogo img{
+	max-width:50%;
+}
+.site-info{
+	
+	text-align:center;
+}
+
+
+
