@@ -225,6 +225,42 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'Novecento';
+  src: url("543c62124e789a2a88a28bb596883d65.woff2") format("woff2"), url("543c62124e789a2a88a28bb596883d65.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url("Merriweather-LightItalic.woff2") format("woff2"), url("Merriweather-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url("Merriweather-BoldItalic.woff2") format("woff2"), url("Merriweather-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url("Merriweather-Light.woff2") format("woff2"), url("Merriweather-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url("Merriweather-Bold.woff2") format("woff2"), url("Merriweather-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Novecento';
+  src: url("688d7c5cba7d4856b6154ffc00257047.woff2") format("woff2"), url("688d7c5cba7d4856b6154ffc00257047.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -430,7 +466,6 @@ a {
 .main-navigation {
   clear: both;
   display: block;
-  float: left;
   width: 100%; }
   .main-navigation ul {
     display: none;
@@ -440,7 +475,6 @@ a {
     .main-navigation ul ul {
       -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
               box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-      float: left;
       position: absolute;
       top: 1.5rem;
       left: -999rem;
@@ -457,7 +491,7 @@ a {
     .main-navigation ul li.focus > ul {
       left: auto; }
   .main-navigation li {
-    float: left;
+
     position: relative; }
   .main-navigation a {
     display: block;
@@ -483,13 +517,13 @@ a {
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
-  float: left;
+
   width: 50%; }
 
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
-  float: right;
+
   text-align: right;
   width: 50%; }
 
@@ -568,6 +602,21 @@ a {
 # Content
 --------------------------------------------------------------*/
 /* Posts and pages */
+body {
+  color: black; }
+
+.site-header {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696 url(../../images/home-hero.jpg) no-repeat top;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../images/home-hero.jpg) no-repeat top;
+  background-size: cover,cover;
+  background-attachment: fixed;
+  height: 100vh; }
+
+.logo-front {
+  position: absolute;
+  top: 40%;
+  right: 40%; }
+
 .sticky {
   display: block; }
 
@@ -610,21 +659,35 @@ a {
   width: 1120px; }
 
 .contact {
-  width: 25%; }
+  width: 25%;
+  margin: 3rem 0; }
 
-.bhour {
-  width: 25%; }
+.bhours {
+  width: 25%;
+  margin: 3rem 0; }
 
 .textlogo {
   width: 50%;
   text-align: right;
-  margin-top: 20px; }
+  margin-top: 4.2rem; }
 
 .textlogo img {
   max-width: 50%; }
 
 .site-info {
   text-align: center; }
+
+.site-footer {
+  background-image: url("../../images/darkwood.png");
+  height: 100%;
+  color: white; }
+  .site-footer h3 {
+    color: #d99054;
+    text-transform: uppercase;
+    font-size: 1.2rem; }
+
+.daysweek {
+  font-weight: bold; }
 
 /*--------------------------------------------------------------
 # Media

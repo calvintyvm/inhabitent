@@ -4,6 +4,28 @@
 
 /* Posts and pages */
 
+body{
+	color:black;
+}
+
+
+.site-header{
+	background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696 url(../../images/home-hero.jpg) no-repeat top;
+    background-size: cover,cover;
+	background-attachment:fixed;
+	height:100vh;
+}
+
+.logo-front{
+	position:absolute;
+	top:40%;
+	right:40%;
+	
+
+}
+
+
+
 .sticky {
 	display: block;
 }
@@ -61,22 +83,42 @@
 }
 .contact{
 	width:25%;
+	margin:3rem 0;
+
 }
-.bhour{
+.bhours{
 	width:25%;
+	margin:3rem 0;
 }
 .textlogo{
 	width:50%;
 	text-align:right;
-	margin-top:20px;
+	margin-top:4.2rem ;
+
+
 }
 .textlogo img{
 	max-width:50%;
 }
 .site-info{
-	
-	text-align:center;
+text-align:center;
+
 }
 
+.site-footer{
+	background-image:url("../../images/darkwood.png");
+	height:100%;
+	color:white;
+	h3{
+		color:#d99054;
+		text-transform: uppercase;
+		font-size:1.2rem;
+	}
+}
+
+
+.daysweek{
+	font-weight:bold;
+}
 
 

@@ -1,15 +1,10 @@
 <?php
-/**
- * The main template file.
- *
- * @package RED_Starter_Theme
- */
 
 get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-		<img class = "logo-front" src="http://tent.academy.red/wp-content/themes/inhabitent/images/inhabitent-logo-full.svg">
+
 		<?php if ( have_posts() ) : ?>
 
 			<?php if ( is_home() && ! is_front_page() ) : ?>
@@ -33,12 +28,7 @@ get_header(); ?>
 
 		<?php endif; ?>
 
-
-
 		</main><!-- #main -->
-
-
-
 	</div><!-- #primary -->
 
 <?php get_sidebar(); ?>
