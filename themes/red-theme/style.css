@@ -466,6 +466,7 @@ a {
 .main-navigation {
   clear: both;
   display: block;
+  float: left;
   width: 100%; }
   .main-navigation ul {
     display: none;
@@ -475,6 +476,7 @@ a {
     .main-navigation ul ul {
       -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
               box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+      float: left;
       position: absolute;
       top: 1.5rem;
       left: -999rem;
@@ -491,7 +493,7 @@ a {
     .main-navigation ul li.focus > ul {
       left: auto; }
   .main-navigation li {
-
+    float: left;
     position: relative; }
   .main-navigation a {
     display: block;
@@ -517,13 +519,13 @@ a {
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
-
+  float: left;
   width: 50%; }
 
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
-
+  float: right;
   text-align: right;
   width: 50%; }
 
