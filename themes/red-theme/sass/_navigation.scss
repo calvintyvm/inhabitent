@@ -29,18 +29,18 @@ a {
 .main-navigation {
 	clear: both;
 	display: block;
-	float: left;
+	// float: left;
 	width: 100%;
+
 
 	ul {
 		display: none;
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
-
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-			float: left;
+			// float: left;
 			position: absolute;
 			top: $base__space-unit;
 			left: -999rem;
@@ -77,7 +77,7 @@ a {
 		}
 	}
 	li {
-		float: left;
+		// float: left;
 		position: relative;
 
 		&:hover > a,
@@ -93,6 +93,22 @@ a {
 	.current-menu-item > a,
 	.current_page_ancestor > a {
 	}
+
+
+	/**
+	 * Main Navigation Menu
+     */
+	 .menu {
+		display:flex;
+		justify-content:space-between;
+		width:20%;
+		margin-left:auto;
+		margin-right:50px;
+		padding-top:10px;
+
+		
+	}
+
 }
 
 /* Small menu. */
@@ -120,12 +136,12 @@ a {
 	}
 
 	.nav-previous {
-		float: left;
+		// float: left;
 		width: 50%;
 	}
 
 	.nav-next {
-		float: right;
+		// float: right;
 		text-align: right;
 		width: 50%;
 	}

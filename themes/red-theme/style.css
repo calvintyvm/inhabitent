@@ -466,8 +466,10 @@ a {
 .main-navigation {
   clear: both;
   display: block;
-  float: left;
-  width: 100%; }
+  width: 100%;
+  /**
+	 * Main Navigation Menu
+     */ }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -476,7 +478,6 @@ a {
     .main-navigation ul ul {
       -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
               box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-      float: left;
       position: absolute;
       top: 1.5rem;
       left: -999rem;
@@ -493,11 +494,21 @@ a {
     .main-navigation ul li.focus > ul {
       left: auto; }
   .main-navigation li {
-    float: left;
     position: relative; }
   .main-navigation a {
     display: block;
     text-decoration: none; }
+  .main-navigation .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 20%;
+    margin-left: auto;
+    margin-right: 50px;
+    padding-top: 10px; }
 
 /* Small menu. */
 .menu-toggle,
@@ -519,13 +530,11 @@ a {
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
-  float: left;
   width: 50%; }
 
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
-  float: right;
   text-align: right;
   width: 50%; }
 
@@ -607,17 +616,63 @@ a {
 body {
   color: black; }
 
-.site-header {
+.page-template-default .site-header {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696 url(../../images/home-hero.jpg) no-repeat top;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../images/home-hero.jpg) no-repeat top;
   background-size: cover,cover;
   background-attachment: fixed;
   height: 100vh; }
 
-.logo-front {
+.page-template-default .logo-front {
   position: absolute;
-  top: 40%;
-  right: 40%; }
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
+.shop-title {
+  text-align: center;
+  font-size: 50px; }
+
+.product-type-blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin-right: 5%;
+  margin-left: 5%; }
+  .product-type-blocks img {
+    width: 50px;
+    height: 50px; }
+
+.product-type-block-wrapper {
+  border: 1px solid #e1e1e1;
+  margin: 10px;
+  border-top-width: 5px;
+  padding: 20px; }
+
+.journal-title {
+  text-align: center;
+  font-size: 50px; }
+
+.journal-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  .journal-container h1 {
+    font-size: 10px;
+    text-transform: uppercase; }
+  .journal-container img {
+    height: 250px;
+    width: 360px; }
+
+.journal-art {
+  border: 1px solid #e1e1e1; }
 
 .sticky {
   display: block; }

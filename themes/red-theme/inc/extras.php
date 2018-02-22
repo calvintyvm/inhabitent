@@ -49,4 +49,24 @@ function inhabitent_login_title(){
 }
 add_filter('login_headertitle','inhabitent_login_title');
 
-?>
+function inhabitent_hero_image(){
+	if ( !is_page_template( 'page-templates/about.php' ) ) {
+		return;
+	}else{
+		$CFS_url = CFS()->get( 'background' );
+		if (!$CFS_url){
+			return;
+		}
+		$CSS =".page-template-about .entry-header{
+		background: 
+		linear-gradient(to bottom,rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100%),
+		url({$CFS_url}) no-repeat center bottom;
+		background-size:cover,cover;
+		height:100vh;
+		}";
+		wp_add_inline_style ('inhabitent-style',$CSS);
+	} 
+}
+ 
+add_action("wp_enqueue_scripts" , 'inhabitent_hero_image');
+
