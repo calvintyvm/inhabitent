@@ -34,9 +34,9 @@ get_header(); ?>
 			) );
 		?>
 
-		<button type="button" class="black-btn"><i class="fab fa-facebook-square"></i>like</button>
-		<button type="button" class="black-btn"><i class="fab fa-facebook-square"></i>tweet</button>
-		<button type="button" class="black-btn"><i class="fab fa-facebook-square"></i>pin</button>
+		<button type="button" class="btn"><i class="fab fa-facebook-f"></i>like</button>
+		<button type="button" class="btn"><i class="fab fa-twitter"></i>tweet</button>
+		<button type="button" class="btn"><i class="fab fa-pinterest-p"></i>pin</button>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">

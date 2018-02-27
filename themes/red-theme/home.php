@@ -18,7 +18,7 @@ get_header(); ?>
 
 				<?php get_template_part( 'template-parts/content' ); ?>
 				<a class ="black-btn" href="<?php the_permalink(); ?>">
-				Read More
+				Read More →
 				</a>
 
 			<?php endwhile; ?>

@@ -5,7 +5,9 @@
 /* Posts and pages */
 
 
-
+.thumbnail-wrapper{
+	background-color: #e1e1e1;
+}
 
 .site-brand{
 	position:absolute;
@@ -42,6 +44,7 @@ a{
 	text-decoration: none;
 }
 .page-template-default{
+	
 
 	.site-header{
 		background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696 url(../../images/home-hero.jpg) no-repeat top;
@@ -130,11 +133,12 @@ a{
 
 .journal-title{
 	text-align:center;
-	font-size:50px;
+	font-size:2.4rem;
 	font-family:"Novecento";
 	font-weight:400;
 	margin-top:5%;
 	margin-bottom:3%;
+	text-transform:uppercase;
 }
 
 .journal-container{
@@ -198,7 +202,7 @@ a{
 
 	}
 	.black-btn:hover {
-		// background: #248a83;
+		background: #248a83;
 		color:white;
 		border:1px solid transparent;
 		
@@ -233,51 +237,74 @@ border: 1px solid #e1e1e1;
     "ad1 ad1 ad3 ad4"
     "ad1 ad1 ad3 ad4";
 	text-transform: uppercase;
-	margin-bottom:50px;
+	margin-bottom:80px;
 	margin-right:5%;
 	margin-left:5%;
 
+	p{
+		text-transform: none;
+	color:white;
+	text-align:left;
+	margin-left:5%;
+	margin-right:5%;
+	margin-bottom:5%;
+	}
+	p:hover{
+		color:lighten(#d99054,20%);
+	}
+	
+	
 	
 }
 
 .ad1{
 
-    background-color:black;
+	background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696 url(../../images/adventure/canoe-girl.jpg) center no-repeat;
+	background-size: 200vh;
     text-align:center;
     display:flex;
-    align-items:center;
     justify-content:center;
-    grid-area:ad1;
+	grid-area:ad1;
+	font-size:3rem;
+	
+	
+
+
+	
 
 }
 .ad2{
 
-	background-color:black;
+	background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696 url(../../images/adventure/beach-bonfire.jpg) center no-repeat;
+	background-size: 130vh;
    display:flex;
    align-items:center;
    justify-content:center;
-    grid-area:ad2;
+	grid-area:ad2;
+	font-size: 2.4rem;
 
 }
 
 .ad3{
 
-    background-color:black;
-    display:flex;
+    background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696 url(../../images/adventure/mountain-hikers.jpg) center no-repeat;
+	background-size: 130vh;
+	display:flex;
     align-items:center;
     justify-content:center;
     grid-area:ad3;
-
+	font-size: 1.6rem;
 }
 
 .ad4{
 
-	background-color:black;
+	background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696 url(../../images/adventure/night-sky.jpg) center no-repeat;
+	background-size: 100vh;
     display:flex;
     align-items:center;
     justify-content:center;
     grid-area:ad4;
-
+	font-size: 1.6rem;
 }
 
 .blog{
@@ -373,12 +400,13 @@ border: 1px solid #e1e1e1;
 		text-transform:uppercase;
 			font-family:"Novecento";
 			font-size: 2.1rem;
+			padding: .75rem 1.5rem;
 		a:link {
 		  background-color: #248a83;
 		  font-size: 2.1rem;
 		  color: white;
 		  text-decoration: none;
-		  padding: .75rem 1.5rem;
+		  padding: 0;
 		}
 		a:visited {
 		  text-decoration: none;
@@ -387,6 +415,9 @@ border: 1px solid #e1e1e1;
 		a:active {
 		  text-decoration: none;
 		}
+		a:hover{
+			color:lighten(#d99054,20%);
+		}
 	  }
 	  
 	  .entry-meta{
@@ -394,7 +425,7 @@ border: 1px solid #e1e1e1;
 		background-color: #248a83;
 		position: absolute;
 		right:0;
-		bottom:7px;  
+		bottom:9px;  
 		font-size:1rem;
 			font-family:"Novecento";
 	  }
@@ -461,6 +492,15 @@ border: 1px solid #e1e1e1;
 .black-btn{
 	border: 1px solid #000;
 	padding:20px;
+	color:black;
+
+}
+
+.black-btn:hover{
+	color:white;
+	background-color:#248a83;
+	border:1px solid transparent;
+
 
 }
 	}
@@ -509,6 +549,25 @@ border: 1px solid #e1e1e1;
 
 		
 }
+.widget-area{
+	display:flex;
+	flex-direction:column;
+
+	border: 1px solid #e1e1e1;
+	width:100%;
+	text-align:left;
+	padding:50px;
+	border-top:none;
+	border-bottom:none;
+
+	.widget-title{
+		font-family:"Novecento";
+		font-size: 1.5rem;
+		letter-spacing:2px;
+		text-transform:uppercase;
+	}
+}
+
 
 	
 
@@ -575,17 +634,7 @@ a:hover{
 	text-transform:uppercase;
 }
 
-.widget-area{
-	display:flex;
-	flex-direction:column;
-
-	border: 1px solid #e1e1e1;
-	width:100%;
-	text-align:left;
-	padding:50px;
-	border-top:none;
-	border-bottom:none;
-}
+ 
 
 .site-main{
 	margin-top:5%;
@@ -615,35 +664,179 @@ a:hover{
 }
 
 .post-template-default{
+	.black-btn{
+		background: white;
+		border: none;
+		border-radius: 0;
+		color: #000;
+		font-size: .9rem;
+		line-height: 1;
+		padding: .75rem 1.5rem;
+		text-decoration: none;
+		text-transform: uppercase;
+		border: 1px solid #000;
+		letter-spacing:0px;
+		display:inline-block;
+		
+
+		svg{
+			margin-right:10px;
+		}
+	
+		}
+		.black-btn:hover {
+
+			background-color:#248a83;
+		}
+
+	.entry-header{
+		position: relative;
+		margin-top:50px;
+	  }
+	  
+	  .entry-title{
+		background-color: #248a83;  
+		position: absolute;
+		top:0;
+		text-transform:uppercase;
+			font-family:"Novecento";
+			font-size: 2.1rem;
+			padding: .75rem 1.5rem;
+			color:white;
+		a:link {
+		  background-color: #248a83;
+		  font-size: 2.1rem;
+		  color: white;
+		  text-decoration: none;
+		  padding: 0;
+		}
+		a:visited {
+		  text-decoration: none;
+		  color: white;
+		}
+		a:active {
+		  text-decoration: none;
+		}
+		a:hover{
+			color:lighten(#d99054,20%);
+		}
+	  }
+	  
+	  .entry-meta{
+		color:white;
+		background-color: #248a83;
+		position: absolute;
+
+		bottom:9px;  
+		font-size:1rem;
+			font-family:"Novecento";
+
+			a{
+				color:white;
+			}
+	  }
+
+	.entry-title{
+		text-transform:uppercase;
+	}
+
+
+
+	.widget-area{
+		display:flex;
+		flex-direction:column;
+	
+		border: 1px solid #e1e1e1;
+		width:100%;
+		text-align:left;
+		padding:50px;
+		border-top:none;
+		border-bottom:none;
+	
+		.widget-title{
+			font-family:"Novecento";
+			font-size: 1.5rem;
+			letter-spacing:2px;
+			text-transform:uppercase;
+		}
+	}
+	
+
+
+	ul{
+		padding:0;
+		margin:0;
+	}
+	li{
+		list-style-type: none;
+
+	}
+
+	.day-of-week{
+		font-weight:bold;
+	}
+	.widget{
+		font-size: 1.1rem;
+		
+	}
+
+	.textwidget{
+
+			font-size: 1rem;
+			line-height:1.75;
+		svg{
+			margin-right:10px;
+		}
+
+	}
+	.menu{
+	a {
+		color: #248a83;
+	
+	
+	}
+	a:hover{
+
+		color:#2f1339;
+	}
+}
+
+a{
+	color:#248a83;
+}
+a:hover{
+
+	color:#2f1339;
+}
+
+.site-brand{
+	position:absolute;
+	background: url(../../images/inhabitent-logo-tent.svg) no-repeat;
+	background-size: 50px 33px;
+	height: 33px;
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+	width: 500px;
+	margin-left:85px;
+	margin-top:10px;
+}
+
+
 
 	.site-content{
 		display:flex;
-		border: 1px solid #000;		
+		border: 1px solid #e1e1e1;	
 }
 
-.widget-area{
-	display:flex;
-	flex-direction:column;
-	margin-left:250px;
-	border: 1px solid #000;
-	width:100%;
-	text-align:left;
-	padding:50px;
-	border-top:none;
-	border-bottom:none;
-}
 
-.site-main{
-	margin-top:5%;
-	margin-left:5%;	
-	width:100%;
-	margin-bottom:5%;
-
-
-}
 
 .content-area{
-	width:330%;
+	width:300%;
+	margin-left:5%;
+	margin-right:5%;
+	margin-top:5%;
+	
 }
 
 }
@@ -661,7 +854,7 @@ a:hover{
 	
 
 	.site-content{
-		border: 1px solid #e1e1e1;		border: 1px solid #e1e1e1;
+		border: 1px solid #e1e1e1;		
 	}
 	.menu{
 		a {
@@ -784,6 +977,8 @@ a:hover{
 
 .single-product{
 
+
+
 	.site-brand{
 		position:absolute;
 		background: url(../../images/inhabitent-logo-tent.svg) no-repeat;
@@ -844,7 +1039,7 @@ a:hover{
 		.black-btn:hover {
 
 			background-color:#248a83;
-			border:1px solid transparent;
+
 			
 	
 		 }
@@ -881,10 +1076,72 @@ a:hover{
 	p{
 		font-size: 1rem;
 	}
+
+
 	
 }
 
 .tax-product_type{
+
+	
+	
+
+
+	.site-content{
+		border: 1px solid #e1e1e1;
+	}
+
+	.post-price-title-con{
+        display:flex;
+        width:auto;
+        max-width:250px;
+    }
+    .post-title{
+        width:auto;
+        white-space:nowrap;
+
+    }
+
+    .price-title{
+        width:auto;
+    }
+    .product-dots{
+        overflow: hidden;
+        width:auto;
+    } 
+
+	.site-brand{
+		position:absolute;
+		background: url(../../images/inhabitent-logo-tent.svg) no-repeat;
+		background-size: 50px 33px;
+		height: 33px;
+		overflow: hidden;
+		text-indent: 100%;
+		white-space: nowrap;
+		width: 500px;
+		margin-left:85px;
+		margin-top:10px;
+	}
+
+	.menu{
+		a {
+			color: #248a83;
+		
+		
+		}
+		a:hover{
+
+			color:#2f1339;
+		}
+	}
+
+	a{
+		color:#248a83;
+	}
+	a:hover{
+
+		color:#2f1339;
+	}
 	.page-title{
 		text-align:center;
 		text-transform:uppercase;
@@ -907,7 +1164,20 @@ a:hover{
 	justify-content:space-between;
 	text-align:left;
 	margin-bottom:8%;
+	border-top: 1px dashed #c8c8c8;
 
+	a{
+		color:black;
+	}
+
+	.post-price-title-con{
+		padding: 10px;
+	}
+
+	
+
+
+	
 	img{
 		width:256px;
 		height:230px;
@@ -915,6 +1185,7 @@ a:hover{
 	}	
 	article{
 		border: 1px solid #e1e1e1;
+		margin-top:5%;
 	}
 	
 	
@@ -1002,13 +1273,29 @@ a:hover{
 }
 .site-info{
 text-align:center;
+margin-bottom:10px;
+
 
 }
 
 .site-footer{
+	
 	background-image:url("../../images/darkwood.png");
 	height:100%;
 	color:white;
+
+	.icons-footer{
+		svg{
+			margin-right:10px;
+		}
+	}
+
+	svg{
+		font-size:20px;
+	}
+
+
+
 	h3{
 		color:#d99054;
 		text-transform: uppercase;
@@ -1022,6 +1309,10 @@ text-align:center;
 		line-height: 1.75;
 		font-family:"Merriweather";
 	}
+
+	.site-info{
+		font-family:"Novecento";
+	}
 }
 
 
@@ -1029,4 +1320,219 @@ text-align:center;
 	font-weight:bold;
 }
 
+.search{
+	.widget-area{
+		display:flex;
+		flex-direction:column;
+	
+		border: 1px solid #e1e1e1;
+		width:100%;
+		text-align:left;
+		padding:50px;
+		border-top:none;
+		border-bottom:none;
+	
+		.widget-title{
+			font-family:"Novecento";
+			font-size: 1.5rem;
+			letter-spacing:2px;
+			text-transform:uppercase;
+		}
+	}
+	
 
+
+	ul{
+		padding:0;
+		margin:0;
+	}
+	li{
+		list-style-type: none;
+
+	}
+
+	.day-of-week{
+		font-weight:bold;
+	}
+	.widget{
+		font-size: 1.1rem;
+		
+	}
+
+	.textwidget{
+
+			font-size: 1rem;
+			line-height:1.75;
+		svg{
+			margin-right:10px;
+		}
+
+	}
+	.menu{
+	a {
+		color: #248a83;
+	
+	
+	}
+	a:hover{
+
+		color:#2f1339;
+	}
+}
+
+a{
+	color:#248a83;
+}
+a:hover{
+
+	color:#2f1339;
+}
+
+.site-brand{
+	position:absolute;
+	background: url(../../images/inhabitent-logo-tent.svg) no-repeat;
+	background-size: 50px 33px;
+	height: 33px;
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+	width: 500px;
+	margin-left:85px;
+	margin-top:10px;
+}
+
+
+
+	.site-content{
+		display:flex;
+		border: 1px solid #e1e1e1;	
+}
+
+.page-title{
+	text-transform:uppercase;
+	font-family:"Novecento";
+	font-size: 2.4rem;
+	letter-spacing:2px;
+}
+
+.content-area{
+	margin-left:5%;
+	margin-right:5%;
+	margin-bottom:5%;
+}
+
+}
+
+.error404{
+
+	.site-main{
+		margin-left:5%;
+		margin-right:5%;
+		margin-bottom:10%;
+	}
+
+
+	.site-content{
+		display:flex;
+		border: 1px solid #e1e1e1;
+	.not-found{
+		margin-right:5%;
+	}
+
+	}
+	ul{
+		padding:0;
+		margin:0;
+	}
+	li{
+		list-style-type: none;
+
+	}
+
+	.day-of-week{
+		font-weight:bold;
+	}
+	.widget{
+		font-size: 1.1rem;
+		
+	}
+
+	.widget-title{
+		font-family:"Novecento";
+		letter-spacing:2px;
+		text-transform:uppercase;
+	}
+
+	.textwidget{
+
+			font-size: 1rem;
+			line-height:1.75;
+		svg{
+			margin-right:10px;
+		}
+
+	}
+	.menu{
+		a {
+			color: #248a83;
+		
+		
+		}
+		a:hover{
+
+			color:#2f1339;
+		}
+	}
+
+	a{
+		color:#248a83;
+	}
+	a:hover{
+
+		color:#2f1339;
+	}
+
+
+	
+
+	.site-brand{
+		position:absolute;
+		background: url(../../images/inhabitent-logo-tent.svg) no-repeat;
+		background-size: 50px 33px;
+		height: 33px;
+		overflow: hidden;
+		text-indent: 100%;
+		white-space: nowrap;
+		width: 500px;
+		margin-left:85px;
+		margin-top:10px;
+	}
+	.widget-area{
+
+	
+		border: 1px solid #e1e1e1;
+		margin-left:110px;
+		border-top:none;
+		border-bottom:none;
+		border-right:none;
+	// 	text-align:left;
+	// 	padding:50px;
+	// 	border-top:none;
+	// 	border-bottom:none;
+	.widget_archive{
+		margin-left:60px;
+	}
+
+	}
+	.widget_text { 
+		margin-left:60px;
+
+
+	}
+	.business-hours-widget-class{
+		margin-left:60px;
+	}
+	
+
+	
+}

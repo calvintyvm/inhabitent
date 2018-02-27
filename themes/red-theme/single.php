@@ -13,8 +13,11 @@ get_header(); ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 
 			<?php get_template_part( 'template-parts/content', 'single' ); ?>
+			<button type="button" class="black-btn"><i class="fab fa-facebook-f"></i>like</button>
+		<button type="button" class="black-btn"><i class="fab fa-twitter"></i>tweet</button>
+		<button type="button" class="black-btn"><i class="fab fa-pinterest-p"></i>pin</button>
 
-			<?php the_post_navigation(); ?>
+
 
 			<?php
 				// If comments are open or we have at least one comment, load up the comment template.
@@ -22,6 +25,7 @@ get_header(); ?>
 					comments_template();
 				endif;
 			?>
+				
 
 		<?php endwhile; // End of the loop. ?>
 

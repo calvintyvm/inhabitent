@@ -124,10 +124,19 @@ get_header(); ?>
 <section>
 <h2 class="shop-title">Latest Adventures</h2>
 <div class="adventures-container">
-            <div class="ad1">men's</div>
-            <div class="ad2">trends</div>
-            <div class="ad3">glasses</div>
-            <div class="ad4">sale</div>
+
+            <div class="ad1"><p>Getting Back to Nature in a Canoe</p>
+			</div>
+		
+            <div class="ad2"><p>A Night with Friends at the Beach</p>
+
+			</div>
+            <div class="ad3"><p>Taking in the View at Big Mountain</p>
+
+			</div>
+            <div class="ad4"><p>Star-Gazing at the Night Sky </p>
+
+			</div>
 </div>
 
 </section>

@@ -15,7 +15,7 @@
 					<h3>Contact info </h3>
 					<p><i class="fa fa-envelope"></i> info@inhabitent.com</p>
 					<p><i class="fa fa-phone"></i> 778-456-7891</p>
-					<p> 
+					<p class="icons-footer"> 
 					<span><i class="fab fa-facebook-square"></i></span>
 					<span><i class="fab fa-twitter-square"></i></span>
 					<span><i class="fab fa-google-plus-square"></i></span>
@@ -32,7 +32,7 @@
 					</div>
 					</div>
 					<div class="site-info">
-					<p>COPYRIGHT © 2017 INHABITENT</p>
+					COPYRIGHT © 2017 INHABITENT
 					</div><!-- .site-info -->
 				</div>
 			</footer><!-- #colophon -->
