@@ -33,6 +33,10 @@ get_header(); ?>
 				'after'  => '</div>',
 			) );
 		?>
+
+		<button type="button" class="black-btn"><i class="fab fa-facebook-square"></i>like</button>
+		<button type="button" class="black-btn"><i class="fab fa-facebook-square"></i>tweet</button>
+		<button type="button" class="black-btn"><i class="fab fa-facebook-square"></i>pin</button>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">

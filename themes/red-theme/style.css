@@ -455,21 +455,17 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
-  a:visited {
-    color: purple; }
-  a:hover, a:focus, a:active {
-    color: midnightblue; }
-  a:focus {
-    outline: thin dotted; }
-  a:hover, a:active {
-    outline: 0; }
+  color: white; }
+
+a:hover {
+  color: #ecc6a7; }
 
 /* Menus */
 .main-navigation {
   clear: both;
   display: block;
   width: 100%;
+  color: white;
   /**
 	 * Main Navigation Menu
      */ }
@@ -667,7 +663,7 @@ a {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); }
 
-.page-template-default a:hover {
+.page-template-default .shop-button a:hover {
   background-color: #1f7670; }
 
 .shop-title {
@@ -779,9 +775,8 @@ a {
     letter-spacing: 0px;
     display: inline-block; }
   .journal-container .black-btn:hover {
-    background: #248a83;
     color: white;
-    border-style: none; }
+    border: 1px solid transparent; }
   .journal-container .thumbnail-wrapper {
     background-color: #e1e1e1; }
 
@@ -852,6 +847,49 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   grid-area: ad4; }
+
+.blog ul {
+  padding: 0;
+  margin: 0; }
+
+.blog li {
+  list-style-type: none; }
+
+.blog .day-of-week {
+  font-weight: bold; }
+
+.blog .widget {
+  font-size: 1.1rem; }
+
+.blog .textwidget {
+  font-size: 1rem;
+  line-height: 1.75; }
+  .blog .textwidget svg {
+    margin-right: 10px; }
+
+.blog .menu a {
+  color: #248a83; }
+
+.blog .menu a:hover {
+  color: #2f1339; }
+
+.blog a {
+  color: #248a83; }
+
+.blog a:hover {
+  color: #2f1339; }
+
+.blog .site-brand {
+  position: absolute;
+  background: url(../../images/inhabitent-logo-tent.svg) no-repeat;
+  background-size: 50px 33px;
+  height: 33px;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  width: 500px;
+  margin-left: 85px;
+  margin-top: 10px; }
 
 .blog .site-content {
   display: -webkit-box;
@@ -957,6 +995,49 @@ a {
   display: flex;
   border: 1px solid #e1e1e1; }
 
+.page-template-contact ul {
+  padding: 0;
+  margin: 0; }
+
+.page-template-contact li {
+  list-style-type: none; }
+
+.page-template-contact .day-of-week {
+  font-weight: bold; }
+
+.page-template-contact .widget {
+  font-size: 1.1rem; }
+
+.page-template-contact .textwidget {
+  font-size: 1rem;
+  line-height: 1.75; }
+  .page-template-contact .textwidget svg {
+    margin-right: 10px; }
+
+.page-template-contact .menu a {
+  color: #248a83; }
+
+.page-template-contact .menu a:hover {
+  color: #2f1339; }
+
+.page-template-contact a {
+  color: #248a83; }
+
+.page-template-contact a:hover {
+  color: #2f1339; }
+
+.page-template-contact .site-brand {
+  position: absolute;
+  background: url(../../images/inhabitent-logo-tent.svg) no-repeat;
+  background-size: 50px 33px;
+  height: 33px;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  width: 500px;
+  margin-left: 85px;
+  margin-top: 10px; }
+
 .page-template-contact .entry-title {
   font-family: "Novecento";
   text-transform: uppercase; }
@@ -1024,6 +1105,34 @@ a {
 .post-template-default .content-area {
   width: 330%; }
 
+.post-type-archive .page-header {
+  margin-bottom: 4%; }
+
+.post-type-archive .products-container {
+  border-top: 1px dashed #c8c8c8; }
+
+.post-type-archive .site-content {
+  border: 1px solid #e1e1e1;
+  border: 1px solid #e1e1e1; }
+
+.post-type-archive .menu a {
+  color: #248a83; }
+
+.post-type-archive .menu a:hover {
+  color: #2f1339; }
+
+.post-type-archive .site-brand {
+  position: absolute;
+  background: url(../../images/inhabitent-logo-tent.svg) no-repeat;
+  background-size: 50px 33px;
+  height: 33px;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  width: 500px;
+  margin-left: 85px;
+  margin-top: 10px; }
+
 .post-type-archive .subtitle {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1036,6 +1145,10 @@ a {
   font-size: 1.2rem;
   text-transform: uppercase;
   font-family: "Novecento"; }
+  .post-type-archive .subtitle a {
+    color: #248a83; }
+  .post-type-archive .subtitle a:hover {
+    color: #2f1339; }
 
 .post-type-archive h1 {
   text-align: center;
@@ -1084,7 +1197,8 @@ a {
     display: -ms-flexbox;
     display: flex;
     width: auto;
-    max-width: 250px; }
+    max-width: 250px;
+    padding: 10px; }
   .post-type-archive .products-container .post-title {
     width: auto;
     white-space: nowrap; }
@@ -1093,6 +1207,53 @@ a {
   .post-type-archive .products-container .product-dots {
     overflow: hidden;
     width: auto; }
+
+.single-product .site-brand {
+  position: absolute;
+  background: url(../../images/inhabitent-logo-tent.svg) no-repeat;
+  background-size: 50px 33px;
+  height: 33px;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  width: 500px;
+  margin-left: 85px;
+  margin-top: 10px; }
+
+.single-product .site-content {
+  border: 1px solid #e1e1e1; }
+
+.single-product .menu a {
+  color: #248a83; }
+
+.single-product .menu a:hover {
+  color: #2f1339; }
+
+.single-product a {
+  color: #248a83; }
+
+.single-product a:hover {
+  color: #2f1339; }
+
+.single-product .black-btn {
+  background: white;
+  border: none;
+  border-radius: 0;
+  color: #000;
+  font-size: .9rem;
+  line-height: 1;
+  padding: .75rem 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid #000;
+  letter-spacing: 0px;
+  display: inline-block; }
+  .single-product .black-btn svg {
+    margin-right: 10px; }
+
+.single-product .black-btn:hover {
+  background-color: #248a83;
+  border: 1px solid transparent; }
 
 .single-product article {
   display: -webkit-box;
@@ -1114,10 +1275,16 @@ a {
   color: #d99054;
   line-height: 1.25;
   font-size: 2.4rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-family: "Novecento"; }
 
 .single-product .price-title {
-  font-size: 1.8rem; }
+  font-size: 1.8rem;
+  font-family: "Novecento";
+  font-weight: lighter; }
+
+.single-product p {
+  font-size: 1rem; }
 
 .tax-product_type .page-title {
   text-align: center;
