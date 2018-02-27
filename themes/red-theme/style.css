@@ -222,44 +222,47 @@ td,
 th {
   padding: 0; }
 
-/*--------------------------------------------------------------
-# Embedded Fonts
---------------------------------------------------------------*/
+@font-face {
+  font-family: 'Merriweather';
+  src: url("../../fonts/Merriweather-Light.eot");
+  src: url("../../fonts/Merriweather-Light.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather-Light.woff2") format("woff2"), url("../../fonts/Merriweather-Light.woff") format("woff"), url("../../fonts/Merriweather-Light.ttf") format("truetype"), url("../../fonts/Merriweather-Light.svg#Merriweather-Light") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
 @font-face {
   font-family: 'Novecento';
-  src: url("543c62124e789a2a88a28bb596883d65.woff2") format("woff2"), url("543c62124e789a2a88a28bb596883d65.woff") format("woff");
+  src: url("../../fonts/89f7e3e97b21c0793fac4657a6de4445.eot");
+  src: url("../../fonts/89f7e3e97b21c0793fac4657a6de4445.eot?#iefix") format("embedded-opentype"), url("../../fonts/89f7e3e97b21c0793fac4657a6de4445.woff2") format("woff2"), url("../../fonts/89f7e3e97b21c0793fac4657a6de4445.woff") format("woff"), url("../../fonts/89f7e3e97b21c0793fac4657a6de4445.ttf") format("truetype"), url("../../fonts/89f7e3e97b21c0793fac4657a6de4445.svg#.") format("svg");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: 'Merriweather';
-  src: url("Merriweather-LightItalic.woff2") format("woff2"), url("Merriweather-LightItalic.woff") format("woff");
+  src: url("../../fonts/Merriweather-LightItalic.eot");
+  src: url("../../fonts/Merriweather-LightItalic.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather-LightItalic.woff2") format("woff2"), url("../../fonts/Merriweather-LightItalic.woff") format("woff"), url("../../fonts/Merriweather-LightItalic.ttf") format("truetype"), url("../../fonts/Merriweather-LightItalic.svg#Merriweather-LightItalic") format("svg");
   font-weight: 300;
   font-style: italic; }
 
 @font-face {
   font-family: 'Merriweather';
-  src: url("Merriweather-BoldItalic.woff2") format("woff2"), url("Merriweather-BoldItalic.woff") format("woff");
-  font-weight: bold;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'Merriweather';
-  src: url("Merriweather-Light.woff2") format("woff2"), url("Merriweather-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Merriweather';
-  src: url("Merriweather-Bold.woff2") format("woff2"), url("Merriweather-Bold.woff") format("woff");
+  src: url("../../fonts/Merriweather-Bold.eot");
+  src: url("../../fonts/Merriweather-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather-Bold.woff2") format("woff2"), url("../../fonts/Merriweather-Bold.woff") format("woff"), url("../../fonts/Merriweather-Bold.ttf") format("truetype"), url("../../fonts/Merriweather-Bold.svg#Merriweather-Bold") format("svg");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: 'Novecento';
-  src: url("688d7c5cba7d4856b6154ffc00257047.woff2") format("woff2"), url("688d7c5cba7d4856b6154ffc00257047.woff") format("woff");
+  src: url("../../fonts/31998358928f0095998c135f25644a65.eot");
+  src: url("../../fonts/31998358928f0095998c135f25644a65.eot?#iefix") format("embedded-opentype"), url("../../fonts/31998358928f0095998c135f25644a65.woff2") format("woff2"), url("../../fonts/31998358928f0095998c135f25644a65.woff") format("woff"), url("../../fonts/31998358928f0095998c135f25644a65.ttf") format("truetype"), url("../../fonts/31998358928f0095998c135f25644a65.svg#.") format("svg");
   font-weight: normal;
   font-style: normal; }
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url("../../fonts/Merriweather-BoldItalic.eot");
+  src: url("../../fonts/Merriweather-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather-BoldItalic.woff2") format("woff2"), url("../../fonts/Merriweather-BoldItalic.woff") format("woff"), url("../../fonts/Merriweather-BoldItalic.ttf") format("truetype"), url("../../fonts/Merriweather-BoldItalic.svg#Merriweather-BoldItalic") format("svg");
+  font-weight: bold;
+  font-style: italic; }
 
 /*--------------------------------------------------------------
 # Typography
@@ -502,13 +505,28 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 1000px; }
+    .main-navigation .menu li {
+      margin-left: 1%;
+      margin-right: 1%; }
+  .main-navigation .top-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 20%;
+    width: 100%;
     margin-left: auto;
     margin-right: 50px;
-    padding-top: 10px; }
+    padding: 15px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: white;
+    font-family: "Novecento"; }
 
 /* Small menu. */
 .menu-toggle,
@@ -613,8 +631,27 @@ a {
 # Content
 --------------------------------------------------------------*/
 /* Posts and pages */
+.site-brand {
+  position: absolute;
+  background: url(../../images/inhabitent-logo-tent-white.svg) no-repeat;
+  background-size: 50px 33px;
+  height: 33px;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  width: 500px;
+  margin-left: 85px;
+  margin-top: 10px; }
+
 body {
-  color: black; }
+  font-family: 'Merriweather';
+  color: #404040;
+  line-height: 1.75;
+  font-size: 1.1rem;
+  font-weight: lighter; }
+
+a {
+  text-decoration: none; }
 
 .page-template-default .site-header {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696 url(../../images/home-hero.jpg) no-repeat top;
@@ -630,9 +667,17 @@ body {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); }
 
+.page-template-default a:hover {
+  background-color: #1f7670; }
+
 .shop-title {
   text-align: center;
-  font-size: 50px; }
+  font-size: 2.4rem;
+  font-family: "Novecento";
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 5%; }
 
 .product-type-blocks {
   display: -webkit-box;
@@ -645,34 +690,465 @@ body {
   margin-right: 5%;
   margin-left: 5%; }
   .product-type-blocks img {
-    width: 50px;
-    height: 50px; }
+    height: 70px;
+    width: 70px; }
+  .product-type-blocks a {
+    background: #248a83;
+    border: none;
+    border-radius: 0;
+    color: #fff;
+    font-size: .9rem;
+    line-height: 1;
+    padding: .75rem 1.5rem;
+    text-transform: uppercase; }
 
 .product-type-block-wrapper {
   border: 1px solid #e1e1e1;
   margin: 10px;
   border-top-width: 5px;
-  padding: 20px; }
+  padding: .75rem;
+  font-size: 1rem; }
+  .product-type-block-wrapper .shop-button {
+    font-family: "Novecento"; }
+
+.product-type-block-wrapper:hover {
+  border-color: #d99054; }
 
 .journal-title {
   text-align: center;
-  font-size: 50px; }
+  font-size: 50px;
+  font-family: "Novecento";
+  font-weight: 400;
+  margin-top: 5%;
+  margin-bottom: 3%; }
 
 .journal-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around; }
+      justify-content: space-around;
+  margin-left: 5%;
+  margin-right: 5%; }
   .journal-container h1 {
-    font-size: 10px;
-    text-transform: uppercase; }
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    margin-bottom: 30px; }
   .journal-container img {
     height: 250px;
-    width: 360px; }
+    width: 366px; }
+  .journal-container .post-info-wrapper {
+    font-size: 15px;
+    padding: .75rem; }
+  .journal-container .entry-meta {
+    font-size: .75rem;
+    text-transform: uppercase; }
+  .journal-container .entry-title-con {
+    line-height: 1.25;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: "Novecento";
+    color: #248a83; }
+    .journal-container .entry-title-con h1:hover {
+      color: #000; }
+  .journal-container .journal-art {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 32%;
+            flex: 0 1 32%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .journal-container .black-btn {
+    background: white;
+    border: none;
+    border-radius: 0;
+    color: #000;
+    font-size: .9rem;
+    line-height: 1;
+    padding: .75rem 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid #000;
+    letter-spacing: 0px;
+    display: inline-block; }
+  .journal-container .black-btn:hover {
+    background: #248a83;
+    color: white;
+    border-style: none; }
+  .journal-container .thumbnail-wrapper {
+    background-color: #e1e1e1; }
 
 .journal-art {
   border: 1px solid #e1e1e1; }
+
+.adventures-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100px 100px 100px 100px;
+  grid-gap: 20px;
+  margin: 0 auto;
+  grid-template-areas: "ad1 ad1 ad2 ad2" "ad1 ad1 ad2 ad2" "ad1 ad1 ad3 ad4" "ad1 ad1 ad3 ad4";
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  margin-right: 5%;
+  margin-left: 5%; }
+
+.ad1 {
+  background-color: black;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-area: ad1; }
+
+.ad2 {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-area: ad2; }
+
+.ad3 {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-area: ad3; }
+
+.ad4 {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-area: ad4; }
+
+.blog .site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #e1e1e1; }
+  .blog .site-content .black-btn {
+    font-family: "Novecento";
+    padding: .75rem 1.5rem; }
+  .blog .site-content img {
+    height: auto;
+    width: 850px; }
+  .blog .site-content .entry-header {
+    position: relative;
+    margin-top: 50px; }
+  .blog .site-content .entry-title {
+    background-color: #248a83;
+    position: absolute;
+    top: 0;
+    text-transform: uppercase;
+    font-family: "Novecento";
+    font-size: 2.1rem; }
+    .blog .site-content .entry-title a:link {
+      background-color: #248a83;
+      font-size: 2.1rem;
+      color: white;
+      text-decoration: none;
+      padding: .75rem 1.5rem; }
+    .blog .site-content .entry-title a:visited {
+      text-decoration: none;
+      color: white; }
+    .blog .site-content .entry-title a:active {
+      text-decoration: none; }
+  .blog .site-content .entry-meta {
+    color: white;
+    background-color: #248a83;
+    position: absolute;
+    right: 0;
+    bottom: 7px;
+    font-size: 1rem;
+    font-family: "Novecento"; }
+  .blog .site-content .site-main {
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 80%;
+    margin-bottom: 5%; }
+
+.blog .widget-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid #e1e1e1;
+  width: 100%;
+  text-align: left;
+  padding: 50px;
+  border-top: none;
+  border-bottom: none; }
+  .blog .widget-area .widget-title {
+    font-family: "Novecento";
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase; }
+
+.blog .content-area {
+  width: 330%; }
+
+.blog .black-btn {
+  border: 1px solid #000;
+  padding: 20px; }
+
+.page-template-about h1 {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 3rem;
+  font-family: "Novecento";
+  text-transform: uppercase;
+  letter-spacing: 2px; }
+
+.page-template-about .about-container {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 8%;
+  margin-top: 5%;
+  font-size: 1rem;
+  line-height: 1.75; }
+  .page-template-about .about-container h2 {
+    text-align: center;
+    font-size: 2.1rem;
+    letter-spacing: 2px;
+    font-family: "Novecento"; }
+
+.page-template-contact .site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #e1e1e1; }
+
+.page-template-contact .entry-title {
+  font-family: "Novecento";
+  text-transform: uppercase; }
+
+.page-template-contact .widget-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid #e1e1e1;
+  width: 100%;
+  text-align: left;
+  padding: 50px;
+  border-top: none;
+  border-bottom: none; }
+
+.page-template-contact .site-main {
+  margin-top: 5%;
+  margin-left: 5%;
+  width: 85%;
+  margin-bottom: 5%; }
+
+.page-template-contact .content-area {
+  width: 330%; }
+
+.page-template-contact .widget-title {
+  font-family: "Novecento";
+  letter-spacing: 2px; }
+
+.entry-content h2 {
+  font-family: "Novecento";
+  letter-spacing: 2px; }
+
+.post-template-default .site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #000; }
+
+.post-template-default .widget-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 250px;
+  border: 1px solid #000;
+  width: 100%;
+  text-align: left;
+  padding: 50px;
+  border-top: none;
+  border-bottom: none; }
+
+.post-template-default .site-main {
+  margin-top: 5%;
+  margin-left: 5%;
+  width: 100%;
+  margin-bottom: 5%; }
+
+.post-template-default .content-area {
+  width: 330%; }
+
+.post-type-archive .subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 38%;
+  margin-right: 35%;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-family: "Novecento"; }
+
+.post-type-archive h1 {
+  text-align: center;
+  text-transform: uppercase; }
+
+.post-type-archive .product-type-con {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-left: 35%;
+  margin-right: 35%;
+  text-transform: uppercase;
+  font-size: 1.3rem; }
+
+.post-type-archive .products-title {
+  font-family: "Novecento"; }
+
+.post-type-archive .products-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: 5%;
+  margin-right: 5%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 8%; }
+  .post-type-archive .products-container img {
+    width: 256px;
+    height: 230px; }
+  .post-type-archive .products-container .products-indi {
+    border: 1px solid #e1e1e1;
+    margin-top: 3%; }
+  .post-type-archive .products-container h1 {
+    text-align: center; }
+  .post-type-archive .products-container p {
+    text-align: center;
+    line-height: 0;
+    font-size: .9rem; }
+  .post-type-archive .products-container .post-price-title-con {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: auto;
+    max-width: 250px; }
+  .post-type-archive .products-container .post-title {
+    width: auto;
+    white-space: nowrap; }
+  .post-type-archive .products-container .price-title {
+    width: auto; }
+  .post-type-archive .products-container .product-dots {
+    overflow: hidden;
+    width: auto; }
+
+.single-product article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 50px;
+  margin-top: 50px;
+  margin-bottom: 150px; }
+  .single-product article img {
+    width: 530px;
+    height: 400px;
+    margin-right: 50px;
+    margin-top: 20px; }
+
+.single-product .entry-content {
+  width: 45%; }
+
+.single-product .entry-title {
+  color: #d99054;
+  line-height: 1.25;
+  font-size: 2.4rem;
+  text-transform: uppercase; }
+
+.single-product .price-title {
+  font-size: 1.8rem; }
+
+.tax-product_type .page-title {
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.25;
+  font-size: 2.4rem;
+  margin-top: 8%;
+  margin-bottom: 8%;
+  font-family: "Novecento"; }
+
+.tax-product_type .taxonomy-description {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 8%; }
+
+.tax-product_type .product_type_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 5%;
+  margin-right: 5%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: left;
+  margin-bottom: 8%; }
+  .tax-product_type .product_type_container img {
+    width: 256px;
+    height: 230px; }
+  .tax-product_type .product_type_container article {
+    border: 1px solid #e1e1e1; }
 
 .sticky {
   display: block; }
@@ -690,10 +1166,6 @@ body {
 .page-links {
   clear: both;
   margin: 0 0 1.5rem; }
-
-.entry-content {
-  margin: 3rem auto;
-  max-width: 800px; }
 
 /* Asides */
 .blog .format-aside .entry-title,
@@ -741,7 +1213,13 @@ body {
   .site-footer h3 {
     color: #d99054;
     text-transform: uppercase;
-    font-size: 1.2rem; }
+    font-size: 1.2rem;
+    font-family: "Novecento";
+    letter-spacing: 2px; }
+  .site-footer p {
+    font-size: 1rem;
+    line-height: 1.75;
+    font-family: "Merriweather"; }
 
 .daysweek {
   font-weight: bold; }

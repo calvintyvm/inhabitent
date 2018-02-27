@@ -57,7 +57,7 @@ function inhabitent_hero_image(){
 		if (!$CFS_url){
 			return;
 		}
-		$CSS =".page-template-about .entry-header{
+		$CSS =".page-template-about .site-header{
 		background: 
 		linear-gradient(to bottom,rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100%),
 		url({$CFS_url}) no-repeat center bottom;

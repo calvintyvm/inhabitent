@@ -19,11 +19,11 @@ get_header(); ?>
 			<?php endif; ?>
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-			<?php get_template_part( 'template-parts/content' ); ?>
+			<?php get_template_part( 'template-parts/content-front' ); ?>
 			<?php endwhile; ?>
 			<?php the_posts_navigation(); ?>
 			<?php else : ?>
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
+			<?php get_template_part( 'template-parts/content-front', 'none' ); ?>
 			<?php endif; ?>
 		</main>
 		<!-- #main -->
@@ -50,8 +50,10 @@ get_header(); ?>
 		alt ="<?php echo $term->name;?>"/>
 	<p><?php echo $term->description; ?> </p>
 	<p>
+		<div class="shop-button">
 	<a href="<?php echo get_term_link ($term); ?>"
 	class="btn"><?php echo $term->name; ?> Stuff </a>
+	</div>
 	</p>
 	</div>
 	<?php endforeach; ?>
@@ -67,7 +69,9 @@ get_header(); ?>
 
 	<div class="journal-container">
 
-	<?php
+
+
+		<?php
 			$args = array(
 			'order' => 'ASC',
 			'posts_per_page' => 3,
@@ -83,23 +87,27 @@ get_header(); ?>
 	<div class="thumbnail-wrapper">
 	<?php the_post_thumbnail ('medium');?>
 	</div>
+	<div class="post-info-wrapper">
+		<div class="entry-meta">
+			
+			<?php red_starter_posted_on(); ?> / 
+			<?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> 
+
+	
+	</div>
+	<div class="entry-title-con">
 	<h1>
 		<?php the_title(); ?>
 	</h1>
 	<?php endif;?>
 
-	<div class="post-info-wrapper">
-		<div class="entry-meta">
-			<?php red_starter_posted_on(); ?> / 
-			<?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / 
 
-		</div>
-	</div>
 	<a class ="black-btn" href="<?php the_permalink(); ?>">
 	Read Entry
 	</a>
 	</div>
-	
+	</div>
+	</div>
 
 
 	<!-- .entry-meta -->
@@ -115,10 +123,15 @@ get_header(); ?>
 
 <section>
 <h2 class="shop-title">Latest Adventures</h2>
-
+<div class="adventures-container">
+            <div class="ad1">men's</div>
+            <div class="ad2">trends</div>
+            <div class="ad3">glasses</div>
+            <div class="ad4">sale</div>
+</div>
 
 </section>
 
 
-
+<!-- get_sidebar(); ?> -->
 	<?php get_footer(); ?>

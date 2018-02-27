@@ -18,15 +18,14 @@ get_header(); ?>
 			<?php the_post_thumbnail( 'large' ); ?>
 		<?php endif; ?>
 
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		
 
-		<div class="entry-meta">
-			<?php red_starter_posted_on(); ?> / <?php red_starter_comment_count(); ?> / <?php red_starter_posted_by(); ?>
-		</div><!-- .entry-meta -->
+		
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-	<h1><?php echo CFS()->get( 'price' ); ?></h1>
+	<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+	<h1 class="price-title"><?php echo CFS()->get( 'price' ); ?></h1>
 		<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(
@@ -42,7 +41,7 @@ get_header(); ?>
 </article><!-- #post-## -->
 
 
-			<?php the_post_navigation(); ?>
+	
 
 			<?php
 				// If comments are open or we have at least one comment, load up the comment template.
@@ -56,5 +55,5 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>

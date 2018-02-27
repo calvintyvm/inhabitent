@@ -4,11 +4,40 @@
 
 /* Posts and pages */
 
-body{
-	color:black;
+.site-brand{
+	position:absolute;
+    background: url(../../images/inhabitent-logo-tent-white.svg) no-repeat;
+    background-size: 50px 33px;
+    height: 33px;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+	width: 500px;
+	margin-left:85px;
+	margin-top:10px;
 }
 
 
+
+
+
+
+
+body{
+	font-family:'Merriweather';
+	color:#404040;
+	line-height:1.75;
+	font-size:1.1rem;
+	font-weight:lighter;
+
+
+}
+
+
+
+a{
+	text-decoration: none;
+}
 .page-template-default{
 
 	.site-header{
@@ -22,7 +51,7 @@ body{
 		// width:100%;
 
 	}
-	
+
 	.logo-front{
 		position:absolute;
 		top:50%;
@@ -31,6 +60,9 @@ body{
 		
 	
 	}
+	a:hover{
+		background-color:darken(#248a83,5%);
+	}
 
 
 }
@@ -38,7 +70,15 @@ body{
 
 .shop-title{
 	text-align:center;
-	font-size:50px;
+	font-size:2.4rem;
+	font-family:"Novecento";
+	font-weight:400;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	margin-top:5%;
+	
+
+	
 }
 
 .product-type-blocks{
@@ -50,36 +90,121 @@ body{
 
 
 	img{
-		width:50px;
-		height:50px;
+		height:70px;
+		width:70px;
 	}
+	a{
+		background: #248a83;
+		border: none;
+		border-radius: 0;
+		color: #fff;
+		font-size: .9rem;
+		line-height: 1;
+		padding: .75rem 1.5rem;
+		text-transform: uppercase;
+	}
+
 }
 
 .product-type-block-wrapper{
 	border: 1px solid #e1e1e1;
 	margin:10px;
 	border-top-width: 5px;
-	padding:20px;
+	padding:.75rem;
+	font-size: 1rem;
+
+	.shop-button{
+		font-family:"Novecento";
+	}
 }
+.product-type-block-wrapper:hover {
+	border-color: #d99054;
+
+ }
 
 
 .journal-title{
 	text-align:center;
 	font-size:50px;
+	font-family:"Novecento";
+	font-weight:400;
+	margin-top:5%;
+	margin-bottom:3%;
 }
 
 .journal-container{
 	display:flex;
 	justify-content:space-around;
+	margin-left:5%;
+	margin-right:5%;
 
 	h1{
-		font-size:10px;
+		font-size:1.3rem;
 		text-transform:uppercase;
+		margin-bottom:30px;
 	}
 	img{
 		height:250px;
-		width:360px;
+		width:366px;
 	}
+	.post-info-wrapper{
+	font-size:15px;
+	padding:.75rem;
+}
+	.entry-meta{
+	font-size:.75rem;
+	text-transform:uppercase;
+
+
+	}
+	.entry-title-con{
+		line-height:1.25;
+		letter-spacing:2px;
+		text-transform:uppercase;
+		font-family:"Novecento";
+		color:#248a83;
+
+		h1:hover{
+			color:#000;
+		}
+	}
+
+
+	.journal-art{
+		flex: 0 1 32%;
+		display: flex;
+    	flex-direction: column;
+    	justify-content: space-between;
+	}
+	.black-btn{
+	background: white;
+    border: none;
+    border-radius: 0;
+    color: #000;
+    font-size: .9rem;
+    line-height: 1;
+    padding: .75rem 1.5rem;
+    text-decoration: none;
+	text-transform: uppercase;
+	border: 1px solid #000;
+	letter-spacing:0px;
+	display:inline-block;
+
+
+	}
+	.black-btn:hover {
+		background: #248a83;
+		color:white;
+		border-style: none;
+		
+
+	 }
+	.thumbnail-wrapper{
+		background-color: #e1e1e1;
+	
+
+	}
+	
 
 }
 
@@ -88,6 +213,465 @@ body{
 border: 1px solid #e1e1e1;
 
 }
+
+
+
+.adventures-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px 100px;
+    grid-gap: 20px;
+    margin: 0 auto;
+	grid-template-areas:
+	"ad1 ad1 ad2 ad2"
+    "ad1 ad1 ad2 ad2"
+    "ad1 ad1 ad3 ad4"
+    "ad1 ad1 ad3 ad4";
+	text-transform: uppercase;
+	margin-bottom:50px;
+	margin-right:5%;
+	margin-left:5%;
+
+	
+}
+
+.ad1{
+
+    background-color:black;
+    text-align:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    grid-area:ad1;
+
+}
+.ad2{
+
+	background-color:black;
+   display:flex;
+   align-items:center;
+   justify-content:center;
+    grid-area:ad2;
+
+}
+
+.ad3{
+
+    background-color:black;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    grid-area:ad3;
+
+}
+
+.ad4{
+
+	background-color:black;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    grid-area:ad4;
+
+}
+
+.blog{
+	.site-content{
+		display:flex;
+		border: 1px solid #e1e1e1;
+	
+
+	.black-btn{
+		font-family:"Novecento";
+		padding:.75rem 1.5rem;
+		
+
+	}
+	img{
+		height:auto;
+		width:850px;
+	}
+
+
+	.entry-header{
+		position: relative;
+		margin-top:50px;
+	  }
+	  
+	  .entry-title{
+		background-color: #248a83;  
+		position: absolute;
+		top:0;
+		text-transform:uppercase;
+			font-family:"Novecento";
+			font-size: 2.1rem;
+		a:link {
+		  background-color: #248a83;
+		  font-size: 2.1rem;
+		  color: white;
+		  text-decoration: none;
+		  padding: .75rem 1.5rem;
+		}
+		a:visited {
+		  text-decoration: none;
+		  color: white;
+		}
+		a:active {
+		  text-decoration: none;
+		}
+	  }
+	  
+	  .entry-meta{
+		color:white;
+		background-color: #248a83;
+		position: absolute;
+		right:0;
+		bottom:7px;  
+		font-size:1rem;
+			font-family:"Novecento";
+	  }
+	  .site-main{
+		margin-top:5%;
+		margin-left:5%;	
+		width:80%;
+		margin-bottom:5%;
+	
+	
+	}
+	 
+
+
+}
+
+// .widget-area{
+// 	display:flex;
+// 	flex-direction:column;
+
+// 	border: 1px solid #e1e1e1;
+// 	width:100%;
+// 	text-align:left;
+// 	padding:50px;
+// 	border-top:none;
+// 	border-bottom:none;
+// }
+
+// .site-main{
+// 	margin-top:5%;
+// 	margin-left:5%;	
+
+// 	width:85%;
+// 	margin-bottom:5%;
+
+
+// }
+
+.widget-area{
+	display:flex;
+	flex-direction:column;
+
+	border: 1px solid #e1e1e1;
+	width:100%;
+	text-align:left;
+	padding:50px;
+	border-top:none;
+	border-bottom:none;
+
+	.widget-title{
+		font-family:"Novecento";
+		font-size: 1.5rem;
+		letter-spacing:2px;
+		text-transform:uppercase;
+	}
+}
+
+
+
+.content-area{
+	width:330%;
+}
+
+.black-btn{
+	border: 1px solid #000;
+	padding:20px;
+
+}
+	}
+
+
+.page-template-about{
+
+	h1{
+		color:white;
+		position:absolute;
+		top:50%;
+		left:50%;
+		transform: translate(-50%,-50%);
+		font-size: 3rem;
+		font-family:"Novecento";
+		text-transform:uppercase;
+		letter-spacing:2px;
+	}
+
+	.about-container{
+		margin-left:15%;
+		margin-right:15%;
+		margin-bottom:8%;
+		margin-top:5%;
+		font-size: 1rem;
+		line-height: 1.75;
+		h2{
+			text-align:center;
+			font-size: 2.1rem;
+			letter-spacing:2px;
+			font-family:"Novecento";
+		}
+	
+	}
+	
+
+	
+}
+
+
+.page-template-contact{
+	.site-content{
+		display:flex;
+		border: 1px solid #e1e1e1;
+}
+.entry-title{
+	font-family:"Novecento";
+	text-transform:uppercase;
+}
+
+.widget-area{
+	display:flex;
+	flex-direction:column;
+
+	border: 1px solid #e1e1e1;
+	width:100%;
+	text-align:left;
+	padding:50px;
+	border-top:none;
+	border-bottom:none;
+}
+
+.site-main{
+	margin-top:5%;
+	margin-left:5%;	
+
+	width:85%;
+	margin-bottom:5%;
+
+
+}
+
+.content-area{
+	width:330%;
+}
+
+.widget-title{
+	font-family:"Novecento";
+	letter-spacing:2px;
+}
+}
+
+.entry-content{
+	h2{
+		font-family:"Novecento";
+		letter-spacing:2px;
+	}
+}
+
+.post-template-default{
+
+	.site-content{
+		display:flex;
+		border: 1px solid #000;		
+}
+
+.widget-area{
+	display:flex;
+	flex-direction:column;
+	margin-left:250px;
+	border: 1px solid #000;
+	width:100%;
+	text-align:left;
+	padding:50px;
+	border-top:none;
+	border-bottom:none;
+}
+
+.site-main{
+	margin-top:5%;
+	margin-left:5%;	
+	width:100%;
+	margin-bottom:5%;
+
+
+}
+
+.content-area{
+	width:330%;
+}
+
+}
+
+
+
+.post-type-archive{
+	
+	.subtitle  {
+		display:flex;
+		justify-content:space-between;
+		margin-left:38%;
+		margin-right:35%;
+		font-size: 1.2rem;
+		text-transform:uppercase;
+		font-family:"Novecento";
+	}
+	h1{
+		text-align:center;
+		text-transform:uppercase;
+	}
+	.product-type-con{
+		display:flex;
+		justify-content: space-around;
+		margin-left:35%;
+		margin-right:35%;
+		text-transform:uppercase;
+		font-size:1.3rem;
+	}
+	.products-title{
+		font-family:"Novecento";
+	}
+
+	.products-container{
+	display:flex;
+	flex-wrap:wrap;
+	margin-left:5%;
+	margin-right:5%;
+	justify-content:space-between;
+	margin-bottom:8%;
+	
+
+	img{
+		width:256px;
+		height:230px;
+
+	}
+
+	.products-indi{
+		    border: 1px solid #e1e1e1;
+		margin-top:3%;
+		
+
+
+	}
+
+	h1{
+		text-align:center;
+	}
+	p{
+		text-align:center;
+		line-height:0;
+		font-size: .9rem;
+
+		
+	}
+	.post-price-title-con{
+		display:flex;
+		width:auto;
+		max-width:250px;
+	}
+	.post-title{
+		width:auto;
+		white-space:nowrap;
+
+	}
+
+	.price-title{
+		width:auto;
+	}
+	.product-dots{
+		overflow: hidden;
+		width:auto;
+	}
+	
+}
+
+
+
+}
+
+.single-product{
+	article{
+	display:flex;
+	margin-left:50px;
+	margin-top:50px;
+	margin-bottom:150px;
+	img{
+		width:530px;
+		height:400px;
+		margin-right:50px;
+		margin-top:20px;
+	}
+	}
+
+	.entry-content{
+		width:45%;
+	
+	}
+	.entry-title{
+		color: #d99054;
+		line-height: 1.25;
+		font-size: 2.4rem;
+		text-transform: uppercase;
+	}
+	.price-title{
+		font-size: 1.8rem;
+	}
+	
+}
+
+.tax-product_type{
+	.page-title{
+		text-align:center;
+		text-transform:uppercase;
+		line-height: 1.25;
+		font-size:2.4rem;
+		margin-top:8%;
+		margin-bottom:8%;
+		font-family:"Novecento";
+	}
+	.taxonomy-description{
+		font-size: 1rem;
+		text-align:center;
+		margin-bottom:8%;
+
+	}
+	.product_type_container{
+		display:flex;
+		margin-left:5%;
+	margin-right:5%;
+	justify-content:space-between;
+	text-align:left;
+	margin-bottom:8%;
+
+	img{
+		width:256px;
+		height:230px;
+
+	}	
+	article{
+		border: 1px solid #e1e1e1;
+	}
+	
+	
+	}
+	
+}
+
+
 
 .sticky {
 	display: block;
@@ -117,10 +701,10 @@ border: 1px solid #e1e1e1;
 	margin: 0 0 $base__space-unit;
 }
 
-.entry-content{
-	margin:3rem auto;
-	max-width:800px;
-}
+// .entry-content{
+// 	margin:3rem auto;
+// 	max-width:800px;
+// }
 
 /* Asides */
 
@@ -143,6 +727,8 @@ border: 1px solid #e1e1e1;
 	margin-left:auto;
 	margin-right:auto;
 	width:1120px;
+
+
 }
 .contact{
 	width:25%;
@@ -176,6 +762,14 @@ text-align:center;
 		color:#d99054;
 		text-transform: uppercase;
 		font-size:1.2rem;
+		font-family:"Novecento";
+		letter-spacing: 2px;
+
+	}
+	p{
+		font-size: 1rem;
+		line-height: 1.75;
+		font-family:"Merriweather";
 	}
 }
 
