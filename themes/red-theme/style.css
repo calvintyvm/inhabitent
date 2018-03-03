@@ -551,7 +551,7 @@ a:hover {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    width: 1200px; }
+    width: 1000px; }
     .main-navigation .menu li {
       margin-left: 1%;
       margin-right: 1%; }
@@ -674,6 +674,11 @@ a:hover {
 # Content
 --------------------------------------------------------------*/
 /* Posts and pages */
+.search-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
 .widget-title {
   font-weight: bold; }
 
