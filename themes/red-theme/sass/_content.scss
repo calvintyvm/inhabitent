@@ -5,9 +5,7 @@
 /* Posts and pages */
 
 
-.search-form{
-	display:flex;
-}
+
 
 .widget-title{
 	font-weight:bold;
@@ -52,7 +50,7 @@ body{
 a{
 	text-decoration: none;
 }
-.page-template-default{
+.home{
 	
 
 	.site-header{
@@ -316,7 +314,7 @@ border: 1px solid #e1e1e1;
 	font-size: 1.6rem;
 }
 
-.blog{
+.blog, .category,.tag{
 
 
 	ul{
@@ -554,7 +552,7 @@ border: 1px solid #e1e1e1;
 }
 
 
-.page-template-contact{
+.page-id-17{
 	.site-content{
 		display:flex;
 		border: 1px solid #e1e1e1;
@@ -1562,3 +1560,5 @@ a:hover{
 
 	
 }
+
+

@@ -5,7 +5,15 @@
 /* Links */
 
 
+.search-field{
+	display:flex;
+	align-items:center;
+}
 
+.search-form{
+	display:flex;
+	flex-direction:row;
+}
 
 a {
 	color: white;
@@ -121,17 +129,14 @@ a:hover{
 
 	.top-menu{
 		display:flex;
-			justify-content:space-between;
-			width:100%;
-			margin-left:auto;
-			margin-right:50px;
-			padding:15px;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
 			font-size:1rem;
 			text-transform: uppercase;
 			color:white;
 			font-family:"Novecento";
 	}
-
 }
 
 /* Small menu. */

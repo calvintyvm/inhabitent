@@ -247,7 +247,6 @@ input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
 
 fieldset {
-  border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em; }
 
@@ -501,6 +500,23 @@ textarea {
 # Navigation
 --------------------------------------------------------------*/
 /* Links */
+.search-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.search-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
 a {
   color: white; }
 
@@ -559,13 +575,16 @@ a:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 100%;
-    margin-left: auto;
-    margin-right: 50px;
-    padding: 15px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     font-size: 1rem;
     text-transform: uppercase;
     color: white;
@@ -674,11 +693,6 @@ a:hover {
 # Content
 --------------------------------------------------------------*/
 /* Posts and pages */
-.search-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
 .widget-title {
   font-weight: bold; }
 
@@ -707,21 +721,21 @@ body {
 a {
   text-decoration: none; }
 
-.page-template-default .site-header {
+.home .site-header {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696 url(../../images/home-hero.jpg) no-repeat top;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../images/home-hero.jpg) no-repeat top;
   background-size: cover,cover;
   background-attachment: fixed;
   height: 100vh; }
 
-.page-template-default .logo-front {
+.home .logo-front {
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); }
 
-.page-template-default .shop-button a:hover {
+.home .shop-button a:hover {
   background-color: #1f7670; }
 
 .shop-title {
@@ -926,38 +940,38 @@ a {
   grid-area: ad4;
   font-size: 1.6rem; }
 
-.blog ul {
+.blog ul, .category ul, .tag ul {
   padding: 0;
   margin: 0; }
 
-.blog li {
+.blog li, .category li, .tag li {
   list-style-type: none; }
 
-.blog .day-of-week {
+.blog .day-of-week, .category .day-of-week, .tag .day-of-week {
   font-weight: bold; }
 
-.blog .widget {
+.blog .widget, .category .widget, .tag .widget {
   font-size: 1.1rem; }
 
-.blog .textwidget {
+.blog .textwidget, .category .textwidget, .tag .textwidget {
   font-size: 1rem;
   line-height: 1.75; }
-  .blog .textwidget svg {
+  .blog .textwidget svg, .category .textwidget svg, .tag .textwidget svg {
     margin-right: 10px; }
 
-.blog .menu a {
+.blog .menu a, .category .menu a, .tag .menu a {
   color: #248a83; }
 
-.blog .menu a:hover {
+.blog .menu a:hover, .category .menu a:hover, .tag .menu a:hover {
   color: #2f1339; }
 
-.blog a {
+.blog a, .category a, .tag a {
   color: #248a83; }
 
-.blog a:hover {
+.blog a:hover, .category a:hover, .tag a:hover {
   color: #2f1339; }
 
-.blog .site-brand {
+.blog .site-brand, .category .site-brand, .tag .site-brand {
   position: absolute;
   background: url(../../images/inhabitent-logo-tent.svg) no-repeat;
   background-size: 50px 33px;
@@ -969,21 +983,21 @@ a {
   margin-left: 85px;
   margin-top: 10px; }
 
-.blog .site-content {
+.blog .site-content, .category .site-content, .tag .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   border: 1px solid #e1e1e1; }
-  .blog .site-content .black-btn {
+  .blog .site-content .black-btn, .category .site-content .black-btn, .tag .site-content .black-btn {
     font-family: "Novecento";
     padding: .75rem 1.5rem; }
-  .blog .site-content img {
+  .blog .site-content img, .category .site-content img, .tag .site-content img {
     height: auto;
     width: 850px; }
-  .blog .site-content .entry-header {
+  .blog .site-content .entry-header, .category .site-content .entry-header, .tag .site-content .entry-header {
     position: relative;
     margin-top: 50px; }
-  .blog .site-content .entry-title {
+  .blog .site-content .entry-title, .category .site-content .entry-title, .tag .site-content .entry-title {
     background-color: #248a83;
     position: absolute;
     top: 0;
@@ -991,20 +1005,20 @@ a {
     font-family: "Novecento";
     font-size: 2.1rem;
     padding: .75rem 1.5rem; }
-    .blog .site-content .entry-title a:link {
+    .blog .site-content .entry-title a:link, .category .site-content .entry-title a:link, .tag .site-content .entry-title a:link {
       background-color: #248a83;
       font-size: 2.1rem;
       color: white;
       text-decoration: none;
       padding: 0; }
-    .blog .site-content .entry-title a:visited {
+    .blog .site-content .entry-title a:visited, .category .site-content .entry-title a:visited, .tag .site-content .entry-title a:visited {
       text-decoration: none;
       color: white; }
-    .blog .site-content .entry-title a:active {
+    .blog .site-content .entry-title a:active, .category .site-content .entry-title a:active, .tag .site-content .entry-title a:active {
       text-decoration: none; }
-    .blog .site-content .entry-title a:hover {
+    .blog .site-content .entry-title a:hover, .category .site-content .entry-title a:hover, .tag .site-content .entry-title a:hover {
       color: #ecc6a7; }
-  .blog .site-content .entry-meta {
+  .blog .site-content .entry-meta, .category .site-content .entry-meta, .tag .site-content .entry-meta {
     color: white;
     background-color: #248a83;
     position: absolute;
@@ -1012,13 +1026,13 @@ a {
     bottom: 9px;
     font-size: 1rem;
     font-family: "Novecento"; }
-  .blog .site-content .site-main {
+  .blog .site-content .site-main, .category .site-content .site-main, .tag .site-content .site-main {
     margin-top: 5%;
     margin-left: 5%;
     width: 80%;
     margin-bottom: 5%; }
 
-.blog .widget-area {
+.blog .widget-area, .category .widget-area, .tag .widget-area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1032,21 +1046,21 @@ a {
   padding: 50px;
   border-top: none;
   border-bottom: none; }
-  .blog .widget-area .widget-title {
+  .blog .widget-area .widget-title, .category .widget-area .widget-title, .tag .widget-area .widget-title {
     font-family: "Novecento";
     font-size: 1.5rem;
     letter-spacing: 2px;
     text-transform: uppercase; }
 
-.blog .content-area {
+.blog .content-area, .category .content-area, .tag .content-area {
   width: 330%; }
 
-.blog .black-btn {
+.blog .black-btn, .category .black-btn, .tag .black-btn {
   border: 1px solid #000;
   padding: 20px;
   color: black; }
 
-.blog .black-btn:hover {
+.blog .black-btn:hover, .category .black-btn:hover, .tag .black-btn:hover {
   color: white;
   background-color: #248a83;
   border: 1px solid transparent; }
@@ -1078,17 +1092,17 @@ a {
     margin-bottom: 10px;
     font-weight: bold; }
 
-.page-template-contact .site-content {
+.page-id-17 .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   border: 1px solid #e1e1e1; }
 
-.page-template-contact .entry-title {
+.page-id-17 .entry-title {
   font-weight: bold;
   letter-spacing: 2px; }
 
-.page-template-contact .widget-area {
+.page-id-17 .widget-area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1102,44 +1116,44 @@ a {
   padding: 50px;
   border-top: none;
   border-bottom: none; }
-  .page-template-contact .widget-area .widget-title {
+  .page-id-17 .widget-area .widget-title {
     font-family: "Novecento";
     font-size: 1.5rem;
     letter-spacing: 2px;
     text-transform: uppercase; }
 
-.page-template-contact ul {
+.page-id-17 ul {
   padding: 0;
   margin: 0; }
 
-.page-template-contact li {
+.page-id-17 li {
   list-style-type: none; }
 
-.page-template-contact .day-of-week {
+.page-id-17 .day-of-week {
   font-weight: bold; }
 
-.page-template-contact .widget {
+.page-id-17 .widget {
   font-size: 1.1rem; }
 
-.page-template-contact .textwidget {
+.page-id-17 .textwidget {
   font-size: 1rem;
   line-height: 1.75; }
-  .page-template-contact .textwidget svg {
+  .page-id-17 .textwidget svg {
     margin-right: 10px; }
 
-.page-template-contact .menu a {
+.page-id-17 .menu a {
   color: #248a83; }
 
-.page-template-contact .menu a:hover {
+.page-id-17 .menu a:hover {
   color: #2f1339; }
 
-.page-template-contact a {
+.page-id-17 a {
   color: #248a83; }
 
-.page-template-contact a:hover {
+.page-id-17 a:hover {
   color: #2f1339; }
 
-.page-template-contact .site-brand {
+.page-id-17 .site-brand {
   position: absolute;
   background: url(../../images/inhabitent-logo-tent.svg) no-repeat;
   background-size: 50px 33px;
@@ -1151,20 +1165,20 @@ a {
   margin-left: 85px;
   margin-top: 10px; }
 
-.page-template-contact .entry-title {
+.page-id-17 .entry-title {
   font-family: "Novecento";
   text-transform: uppercase; }
 
-.page-template-contact .site-main {
+.page-id-17 .site-main {
   margin-top: 5%;
   margin-left: 5%;
   width: 85%;
   margin-bottom: 5%; }
 
-.page-template-contact .content-area {
+.page-id-17 .content-area {
   width: 330%; }
 
-.page-template-contact .widget-title {
+.page-id-17 .widget-title {
   font-family: "Novecento";
   letter-spacing: 2px; }
 

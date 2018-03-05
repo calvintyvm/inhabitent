@@ -1,9 +1,9 @@
-// (function($){
+(function($){
 
   $(document).ready(function () {
     $('.main-navigation .search-field').hide();
  
-    $('.main-navigation .search-submit').on('click', function (event) {
+    $('.main-navigation .icon-search').on('click', function (event) {
         event.preventDefault();
         $('.main-navigation .search-field').show({duration:300});
         $('.main-navigation .search-field').focus();
@@ -13,4 +13,4 @@
         $(this).hide({duration:300});
     });
  });
-  // })(jQuery);
+  })(jQuery);
