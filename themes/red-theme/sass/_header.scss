@@ -5,10 +5,7 @@
 /* Links */
 
 
-.search-field{
-	display:flex;
-	align-items:center;
-}
+
 
 a {
 	color: white;
@@ -22,6 +19,8 @@ a:hover{
 /* Menus */
 
 .main-navigation {
+
+
 	clear: both;
 	display: block;
 	// float: left;
@@ -114,6 +113,10 @@ a:hover{
 			text-transform: uppercase;
 			color:white;
 			font-family:"Novecento";
+
+			.search-form{
+				display:flex;
+			}
 
 			fieldset{
 				display:flex;
