@@ -16,7 +16,7 @@ get_header(); ?>
 				<?php
 					single_term_title( '<h1 class="page-title">');?> </div>
 
-
+			<?php the_archive_description( '<div class="taxonomy-description">', '</div>' ); ?>
 			</header><!-- .page-header -->
 		<div class="product_type_container">
 			<?php /* Start the Loop */ ?>

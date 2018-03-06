@@ -314,7 +314,7 @@ border: 1px solid #e1e1e1;
 	font-size: 1.6rem;
 }
 
-.blog, .category,.tag{
+.blog, .category,.tag,.date{
 
 
 	ul{
@@ -1262,14 +1262,7 @@ a:hover{
 	display: block;
 }
 
-.footer-container{
-	display:flex;
-	margin-left:auto;
-	margin-right:auto;
-	width:1120px;
 
-
-}
 .contact{
 	width:25%;
 	margin:3rem 0;
@@ -1296,48 +1289,7 @@ margin-bottom:10px;
 
 }
 
-.site-footer{
 
-
-	
-	background-image:url("../../images/darkwood.png");
-	height:100%;
-	color:white;
-
-	h3{
-		margin-bottom:10px;
-	}
-
-	.icons-footer{
-		svg{
-			margin-right:10px;
-		}
-	}
-
-	svg{
-		font-size:20px;
-	}
-
-
-
-	h3{
-		color:#d99054;
-		text-transform: uppercase;
-		font-size:1.2rem;
-		font-family:"Novecento";
-		letter-spacing: 2px;
-
-	}
-	p{
-		font-size: 1rem;
-		line-height: 1.75;
-		font-family:"Merriweather";
-	}
-
-	.site-info{
-		font-family:"Novecento";
-	}
-}
 
 
 .daysweek{

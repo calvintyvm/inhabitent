@@ -1,5 +1,5 @@
 /*--------------------------------------------------------------
-# Navigation
+# Menu
 --------------------------------------------------------------*/
 
 /* Links */
@@ -8,11 +8,6 @@
 .search-field{
 	display:flex;
 	align-items:center;
-}
-
-.search-form{
-	display:flex;
-	flex-direction:row;
 }
 
 a {
@@ -39,7 +34,7 @@ a:hover{
 	ul {
 		display: none;
 		list-style: none;
-		margin: 0;
+		margin: 20px;
 		padding-left: 0;
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -98,23 +93,6 @@ a:hover{
 	}
 
 
-	/**
-	 * Main Navigation Menu
-     */
-	//  .menu {
-	// 	display:flex;
-	// 	justify-content:space-between;
-	// 	width:25%;
-	// 	margin-left:auto;
-	// 	margin-right:50px;
-	// 	padding:15px;
-	// 	font-size:1rem;
-	// 	text-transform: uppercase;
-	// 	color:white;
-	// 	font-family:"Novecento";
-
-		
-	// }
 
 	.menu{
 		display:flex;
@@ -136,6 +114,17 @@ a:hover{
 			text-transform: uppercase;
 			color:white;
 			font-family:"Novecento";
+
+			fieldset{
+				display:flex;
+			}
+			.icon-search{
+				width:5px;
+				margin:0;
+			}
+			svg{
+				margin:0;
+			}
 	}
 }
 

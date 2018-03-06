@@ -43,53 +43,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block; }
-
-body {
-  line-height: 1; }
-
-ol, ul {
-  list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -247,8 +200,7 @@ input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
 
 fieldset {
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em; }
+  border: 0; }
 
 legend {
   border: 0;
@@ -497,7 +449,7 @@ textarea {
   width: 100%; }
 
 /*--------------------------------------------------------------
-# Navigation
+# Menu
 --------------------------------------------------------------*/
 /* Links */
 .search-field {
@@ -507,15 +459,6 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-
-.search-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row; }
 
 a {
   color: white; }
@@ -528,14 +471,11 @@ a:hover {
   clear: both;
   display: block;
   width: 100%;
-  color: white;
-  /**
-	 * Main Navigation Menu
-     */ }
+  color: white; }
   .main-navigation ul {
     display: none;
     list-style: none;
-    margin: 0;
+    margin: 20px;
     padding-left: 0; }
     .main-navigation ul ul {
       -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -589,6 +529,15 @@ a:hover {
     text-transform: uppercase;
     color: white;
     font-family: "Novecento"; }
+    .main-navigation .top-menu fieldset {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .main-navigation .top-menu .icon-search {
+      width: 5px;
+      margin: 0; }
+    .main-navigation .top-menu svg {
+      margin: 0; }
 
 /* Small menu. */
 .menu-toggle,
@@ -617,6 +566,37 @@ a:hover {
 .post-navigation .nav-next {
   text-align: right;
   width: 50%; }
+
+.site-footer {
+  background-image: url("../../images/darkwood.png");
+  height: 100%;
+  color: white; }
+  .site-footer h3 {
+    margin-bottom: 10px; }
+  .site-footer .icons-footer svg {
+    margin-right: 10px; }
+  .site-footer svg {
+    font-size: 20px; }
+  .site-footer h3 {
+    color: #d99054;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-family: "Novecento";
+    letter-spacing: 2px; }
+  .site-footer p {
+    font-size: 1rem;
+    line-height: 1.75;
+    font-family: "Merriweather"; }
+  .site-footer .site-info {
+    font-family: "Novecento"; }
+
+.footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -940,38 +920,38 @@ a {
   grid-area: ad4;
   font-size: 1.6rem; }
 
-.blog ul, .category ul, .tag ul {
+.blog ul, .category ul, .tag ul, .date ul {
   padding: 0;
   margin: 0; }
 
-.blog li, .category li, .tag li {
+.blog li, .category li, .tag li, .date li {
   list-style-type: none; }
 
-.blog .day-of-week, .category .day-of-week, .tag .day-of-week {
+.blog .day-of-week, .category .day-of-week, .tag .day-of-week, .date .day-of-week {
   font-weight: bold; }
 
-.blog .widget, .category .widget, .tag .widget {
+.blog .widget, .category .widget, .tag .widget, .date .widget {
   font-size: 1.1rem; }
 
-.blog .textwidget, .category .textwidget, .tag .textwidget {
+.blog .textwidget, .category .textwidget, .tag .textwidget, .date .textwidget {
   font-size: 1rem;
   line-height: 1.75; }
-  .blog .textwidget svg, .category .textwidget svg, .tag .textwidget svg {
+  .blog .textwidget svg, .category .textwidget svg, .tag .textwidget svg, .date .textwidget svg {
     margin-right: 10px; }
 
-.blog .menu a, .category .menu a, .tag .menu a {
+.blog .menu a, .category .menu a, .tag .menu a, .date .menu a {
   color: #248a83; }
 
-.blog .menu a:hover, .category .menu a:hover, .tag .menu a:hover {
+.blog .menu a:hover, .category .menu a:hover, .tag .menu a:hover, .date .menu a:hover {
   color: #2f1339; }
 
-.blog a, .category a, .tag a {
+.blog a, .category a, .tag a, .date a {
   color: #248a83; }
 
-.blog a:hover, .category a:hover, .tag a:hover {
+.blog a:hover, .category a:hover, .tag a:hover, .date a:hover {
   color: #2f1339; }
 
-.blog .site-brand, .category .site-brand, .tag .site-brand {
+.blog .site-brand, .category .site-brand, .tag .site-brand, .date .site-brand {
   position: absolute;
   background: url(../../images/inhabitent-logo-tent.svg) no-repeat;
   background-size: 50px 33px;
@@ -983,21 +963,21 @@ a {
   margin-left: 85px;
   margin-top: 10px; }
 
-.blog .site-content, .category .site-content, .tag .site-content {
+.blog .site-content, .category .site-content, .tag .site-content, .date .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   border: 1px solid #e1e1e1; }
-  .blog .site-content .black-btn, .category .site-content .black-btn, .tag .site-content .black-btn {
+  .blog .site-content .black-btn, .category .site-content .black-btn, .tag .site-content .black-btn, .date .site-content .black-btn {
     font-family: "Novecento";
     padding: .75rem 1.5rem; }
-  .blog .site-content img, .category .site-content img, .tag .site-content img {
+  .blog .site-content img, .category .site-content img, .tag .site-content img, .date .site-content img {
     height: auto;
     width: 850px; }
-  .blog .site-content .entry-header, .category .site-content .entry-header, .tag .site-content .entry-header {
+  .blog .site-content .entry-header, .category .site-content .entry-header, .tag .site-content .entry-header, .date .site-content .entry-header {
     position: relative;
     margin-top: 50px; }
-  .blog .site-content .entry-title, .category .site-content .entry-title, .tag .site-content .entry-title {
+  .blog .site-content .entry-title, .category .site-content .entry-title, .tag .site-content .entry-title, .date .site-content .entry-title {
     background-color: #248a83;
     position: absolute;
     top: 0;
@@ -1005,20 +985,20 @@ a {
     font-family: "Novecento";
     font-size: 2.1rem;
     padding: .75rem 1.5rem; }
-    .blog .site-content .entry-title a:link, .category .site-content .entry-title a:link, .tag .site-content .entry-title a:link {
+    .blog .site-content .entry-title a:link, .category .site-content .entry-title a:link, .tag .site-content .entry-title a:link, .date .site-content .entry-title a:link {
       background-color: #248a83;
       font-size: 2.1rem;
       color: white;
       text-decoration: none;
       padding: 0; }
-    .blog .site-content .entry-title a:visited, .category .site-content .entry-title a:visited, .tag .site-content .entry-title a:visited {
+    .blog .site-content .entry-title a:visited, .category .site-content .entry-title a:visited, .tag .site-content .entry-title a:visited, .date .site-content .entry-title a:visited {
       text-decoration: none;
       color: white; }
-    .blog .site-content .entry-title a:active, .category .site-content .entry-title a:active, .tag .site-content .entry-title a:active {
+    .blog .site-content .entry-title a:active, .category .site-content .entry-title a:active, .tag .site-content .entry-title a:active, .date .site-content .entry-title a:active {
       text-decoration: none; }
-    .blog .site-content .entry-title a:hover, .category .site-content .entry-title a:hover, .tag .site-content .entry-title a:hover {
+    .blog .site-content .entry-title a:hover, .category .site-content .entry-title a:hover, .tag .site-content .entry-title a:hover, .date .site-content .entry-title a:hover {
       color: #ecc6a7; }
-  .blog .site-content .entry-meta, .category .site-content .entry-meta, .tag .site-content .entry-meta {
+  .blog .site-content .entry-meta, .category .site-content .entry-meta, .tag .site-content .entry-meta, .date .site-content .entry-meta {
     color: white;
     background-color: #248a83;
     position: absolute;
@@ -1026,13 +1006,13 @@ a {
     bottom: 9px;
     font-size: 1rem;
     font-family: "Novecento"; }
-  .blog .site-content .site-main, .category .site-content .site-main, .tag .site-content .site-main {
+  .blog .site-content .site-main, .category .site-content .site-main, .tag .site-content .site-main, .date .site-content .site-main {
     margin-top: 5%;
     margin-left: 5%;
     width: 80%;
     margin-bottom: 5%; }
 
-.blog .widget-area, .category .widget-area, .tag .widget-area {
+.blog .widget-area, .category .widget-area, .tag .widget-area, .date .widget-area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1046,21 +1026,21 @@ a {
   padding: 50px;
   border-top: none;
   border-bottom: none; }
-  .blog .widget-area .widget-title, .category .widget-area .widget-title, .tag .widget-area .widget-title {
+  .blog .widget-area .widget-title, .category .widget-area .widget-title, .tag .widget-area .widget-title, .date .widget-area .widget-title {
     font-family: "Novecento";
     font-size: 1.5rem;
     letter-spacing: 2px;
     text-transform: uppercase; }
 
-.blog .content-area, .category .content-area, .tag .content-area {
+.blog .content-area, .category .content-area, .tag .content-area, .date .content-area {
   width: 330%; }
 
-.blog .black-btn, .category .black-btn, .tag .black-btn {
+.blog .black-btn, .category .black-btn, .tag .black-btn, .date .black-btn {
   border: 1px solid #000;
   padding: 20px;
   color: black; }
 
-.blog .black-btn:hover, .category .black-btn:hover, .tag .black-btn:hover {
+.blog .black-btn:hover, .category .black-btn:hover, .tag .black-btn:hover, .date .black-btn:hover {
   color: white;
   background-color: #248a83;
   border: 1px solid transparent; }
@@ -1613,14 +1593,6 @@ a {
 .bypostauthor {
   display: block; }
 
-.footer-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1120px; }
-
 .contact {
   width: 25%;
   margin: 3rem 0; }
@@ -1640,29 +1612,6 @@ a {
 .site-info {
   text-align: center;
   margin-bottom: 10px; }
-
-.site-footer {
-  background-image: url("../../images/darkwood.png");
-  height: 100%;
-  color: white; }
-  .site-footer h3 {
-    margin-bottom: 10px; }
-  .site-footer .icons-footer svg {
-    margin-right: 10px; }
-  .site-footer svg {
-    font-size: 20px; }
-  .site-footer h3 {
-    color: #d99054;
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    font-family: "Novecento";
-    letter-spacing: 2px; }
-  .site-footer p {
-    font-size: 1rem;
-    line-height: 1.75;
-    font-family: "Merriweather"; }
-  .site-footer .site-info {
-    font-family: "Novecento"; }
 
 .daysweek {
   font-weight: bold; }

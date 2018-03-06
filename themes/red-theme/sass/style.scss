@@ -51,13 +51,14 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "mixins";
 
 // CSS included in style.css.
-@import "cssreset";
+
 @import "normalize";
 @import "fonts";
 @import "typography";
 @import "elements";
 @import "forms";
-@import "navigation";
+@import "header";
+@import "footer";
 @import "modules";
 @import "widgets";
 @import "content";
