@@ -1,7 +1,7 @@
 <form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
 
 		<!-- <a href="#" class="icon-search" aria-hidden="true"> -->
-		<span class="icon-search" aria-hidden="true">
+		<span class="icon-search">
                 <i class="fa fa-search"></i>
             </span>
 			<!-- </a> -->

@@ -16,6 +16,8 @@ get_header(); ?>
 				<a class ="black-btn" href="<?php the_permalink(); ?>">
 				Read More →
 				</a>
+				
+				
 			<?php endwhile; ?>
 			<?php the_posts_navigation(); ?>
 		<?php else : ?>

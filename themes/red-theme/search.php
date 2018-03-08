@@ -2,7 +2,7 @@
 /**
  * The template for displaying search results pages.
  *
- * @package RED_Starter_Theme
+ * @package inhabitent_Theme
  */
 
 get_header(); ?>
@@ -16,7 +16,7 @@ get_header(); ?>
 					<?php while ( have_posts() ) : the_post(); ?>
 					<?php get_template_part( 'template-parts/content', 'search' ); ?>
 					<?php endwhile; ?>
-			<?php red_starter_numbered_pagination(); ?>
+			<?php inhabitent_numbered_pagination(); ?>
 				<?php else : ?>
 				<?php get_template_part( 'template-parts/content', 'none' ); ?>
 				<?php endif; ?>

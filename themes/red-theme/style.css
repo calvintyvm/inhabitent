@@ -452,14 +452,6 @@ textarea {
 # Menu
 --------------------------------------------------------------*/
 /* Links */
-.search-field {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-
 a {
   color: white; }
 
@@ -472,6 +464,14 @@ a:hover {
   display: block;
   width: 100%;
   color: white; }
+  .main-navigation .menu-menu-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 70px; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -507,7 +507,7 @@ a:hover {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    width: 1000px; }
+    width: 1150px; }
     .main-navigation .menu li {
       margin-left: 1%;
       margin-right: 1%; }
@@ -529,6 +529,12 @@ a:hover {
     text-transform: uppercase;
     color: white;
     font-family: "Novecento"; }
+    .main-navigation .top-menu .search-field {
+      width: 200px; }
+    .main-navigation .top-menu .search-form {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
     .main-navigation .top-menu fieldset {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -537,7 +543,8 @@ a:hover {
       width: 5px;
       margin: 0; }
     .main-navigation .top-menu svg {
-      margin: 0; }
+      margin-left: 10px;
+      margin-top: 10px; }
 
 /* Small menu. */
 .menu-toggle,
@@ -701,6 +708,10 @@ body {
 a {
   text-decoration: none; }
 
+.home .site-content {
+  display: block;
+  border: 1px solid #e1e1e1; }
+
 .home .site-header {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696 url(../../images/home-hero.jpg) no-repeat top;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../images/home-hero.jpg) no-repeat top;
@@ -718,7 +729,7 @@ a {
 .home .shop-button a:hover {
   background-color: #1f7670; }
 
-.shop-title {
+.home .shop-title {
   text-align: center;
   font-size: 2.4rem;
   font-family: "Novecento";
@@ -727,7 +738,7 @@ a {
   text-transform: uppercase;
   margin-top: 5%; }
 
-.product-type-blocks {
+.home .product-type-blocks {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -737,10 +748,10 @@ a {
   text-align: center;
   margin-right: 5%;
   margin-left: 5%; }
-  .product-type-blocks img {
+  .home .product-type-blocks img {
     height: 70px;
     width: 70px; }
-  .product-type-blocks a {
+  .home .product-type-blocks a {
     background: #248a83;
     border: none;
     border-radius: 0;
@@ -750,19 +761,19 @@ a {
     padding: .75rem 1.5rem;
     text-transform: uppercase; }
 
-.product-type-block-wrapper {
+.home .product-type-block-wrapper {
   border: 1px solid #e1e1e1;
   margin: 10px;
   border-top-width: 5px;
   padding: .75rem;
   font-size: 1rem; }
-  .product-type-block-wrapper .shop-button {
+  .home .product-type-block-wrapper .shop-button {
     font-family: "Novecento"; }
 
-.product-type-block-wrapper:hover {
+.home .product-type-block-wrapper:hover {
   border-color: #d99054; }
 
-.journal-title {
+.home .journal-title {
   text-align: center;
   font-size: 2.4rem;
   font-family: "Novecento";
@@ -771,7 +782,7 @@ a {
   margin-bottom: 3%;
   text-transform: uppercase; }
 
-.journal-container {
+.home .journal-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -779,28 +790,28 @@ a {
       justify-content: space-around;
   margin-left: 5%;
   margin-right: 5%; }
-  .journal-container h1 {
+  .home .journal-container h1 {
     font-size: 1.3rem;
     text-transform: uppercase;
     margin-bottom: 30px; }
-  .journal-container img {
+  .home .journal-container img {
     height: 250px;
     width: 366px; }
-  .journal-container .post-info-wrapper {
+  .home .journal-container .post-info-wrapper {
     font-size: 15px;
     padding: .75rem; }
-  .journal-container .entry-meta {
+  .home .journal-container .entry-meta {
     font-size: .75rem;
     text-transform: uppercase; }
-  .journal-container .entry-title-con {
+  .home .journal-container .entry-title-con {
     line-height: 1.25;
     letter-spacing: 2px;
     text-transform: uppercase;
     font-family: "Novecento";
     color: #248a83; }
-    .journal-container .entry-title-con h1:hover {
+    .home .journal-container .entry-title-con h1:hover {
       color: #000; }
-  .journal-container .journal-art {
+  .home .journal-container .journal-art {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 32%;
             flex: 0 1 32%;
@@ -814,7 +825,7 @@ a {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-  .journal-container .black-btn {
+  .home .journal-container .black-btn {
     background: white;
     border: none;
     border-radius: 0;
@@ -827,17 +838,17 @@ a {
     border: 1px solid #000;
     letter-spacing: 0px;
     display: inline-block; }
-  .journal-container .black-btn:hover {
+  .home .journal-container .black-btn:hover {
     background: #248a83;
     color: white;
     border: 1px solid transparent; }
-  .journal-container .thumbnail-wrapper {
+  .home .journal-container .thumbnail-wrapper {
     background-color: #e1e1e1; }
 
-.journal-art {
+.home .journal-art {
   border: 1px solid #e1e1e1; }
 
-.adventures-container {
+.home .adventures-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 100px 100px 100px 100px;
@@ -848,17 +859,17 @@ a {
   margin-bottom: 80px;
   margin-right: 5%;
   margin-left: 5%; }
-  .adventures-container p {
+  .home .adventures-container p {
     text-transform: none;
     color: white;
     text-align: left;
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 5%; }
-  .adventures-container p:hover {
+  .home .adventures-container p:hover {
     color: #ecc6a7; }
 
-.ad1 {
+.home .ad1 {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696 url(../../images/adventure/canoe-girl.jpg) center no-repeat;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../images/adventure/canoe-girl.jpg) center no-repeat;
   background-size: 200vh;
@@ -872,7 +883,7 @@ a {
   grid-area: ad1;
   font-size: 3rem; }
 
-.ad2 {
+.home .ad2 {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696 url(../../images/adventure/beach-bonfire.jpg) center no-repeat;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../images/adventure/beach-bonfire.jpg) center no-repeat;
   background-size: 130vh;
@@ -888,7 +899,7 @@ a {
   grid-area: ad2;
   font-size: 2.4rem; }
 
-.ad3 {
+.home .ad3 {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696 url(../../images/adventure/mountain-hikers.jpg) center no-repeat;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../images/adventure/mountain-hikers.jpg) center no-repeat;
   background-size: 130vh;
@@ -904,7 +915,7 @@ a {
   grid-area: ad3;
   font-size: 1.6rem; }
 
-.ad4 {
+.home .ad4 {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696 url(../../images/adventure/night-sky.jpg) center no-repeat;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../images/adventure/night-sky.jpg) center no-repeat;
   background-size: 100vh;
@@ -1072,17 +1083,11 @@ a {
     margin-bottom: 10px;
     font-weight: bold; }
 
-.page-id-17 .site-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border: 1px solid #e1e1e1; }
-
-.page-id-17 .entry-title {
+.page-template-default .entry-title {
   font-weight: bold;
   letter-spacing: 2px; }
 
-.page-id-17 .widget-area {
+.page-template-default .widget-area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1096,44 +1101,44 @@ a {
   padding: 50px;
   border-top: none;
   border-bottom: none; }
-  .page-id-17 .widget-area .widget-title {
+  .page-template-default .widget-area .widget-title {
     font-family: "Novecento";
     font-size: 1.5rem;
     letter-spacing: 2px;
     text-transform: uppercase; }
 
-.page-id-17 ul {
+.page-template-default ul {
   padding: 0;
   margin: 0; }
 
-.page-id-17 li {
+.page-template-default li {
   list-style-type: none; }
 
-.page-id-17 .day-of-week {
+.page-template-default .day-of-week {
   font-weight: bold; }
 
-.page-id-17 .widget {
+.page-template-default .widget {
   font-size: 1.1rem; }
 
-.page-id-17 .textwidget {
+.page-template-default .textwidget {
   font-size: 1rem;
   line-height: 1.75; }
-  .page-id-17 .textwidget svg {
+  .page-template-default .textwidget svg {
     margin-right: 10px; }
 
-.page-id-17 .menu a {
+.page-template-default .menu a {
   color: #248a83; }
 
-.page-id-17 .menu a:hover {
+.page-template-default .menu a:hover {
   color: #2f1339; }
 
-.page-id-17 a {
+.page-template-default a {
   color: #248a83; }
 
-.page-id-17 a:hover {
+.page-template-default a:hover {
   color: #2f1339; }
 
-.page-id-17 .site-brand {
+.page-template-default .site-brand {
   position: absolute;
   background: url(../../images/inhabitent-logo-tent.svg) no-repeat;
   background-size: 50px 33px;
@@ -1145,20 +1150,20 @@ a {
   margin-left: 85px;
   margin-top: 10px; }
 
-.page-id-17 .entry-title {
+.page-template-default .entry-title {
   font-family: "Novecento";
   text-transform: uppercase; }
 
-.page-id-17 .site-main {
+.page-template-default .site-main {
   margin-top: 5%;
   margin-left: 5%;
   width: 85%;
   margin-bottom: 5%; }
 
-.page-id-17 .content-area {
+.page-template-default .content-area {
   width: 330%; }
 
-.page-id-17 .widget-title {
+.page-template-default .widget-title {
   font-family: "Novecento";
   letter-spacing: 2px; }
 

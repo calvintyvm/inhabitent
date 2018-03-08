@@ -51,8 +51,13 @@ a{
 	text-decoration: none;
 }
 .home{
-	
 
+		.site-content{
+		display:block;
+		border: 1px solid #e1e1e1;
+
+		
+}
 	.site-header{
 		background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696 url(../../images/home-hero.jpg) no-repeat top;
 		background-size: cover,cover;
@@ -80,7 +85,7 @@ a{
 }
 
 
-}
+
 
 
 .shop-title{
@@ -313,8 +318,9 @@ border: 1px solid #e1e1e1;
     grid-area:ad4;
 	font-size: 1.6rem;
 }
+}
 
-.blog, .category,.tag,.date{
+.blog,.category,.tag,.date{
 
 
 	ul{
@@ -449,27 +455,6 @@ border: 1px solid #e1e1e1;
 
 }
 
-// .widget-area{
-// 	display:flex;
-// 	flex-direction:column;
-
-// 	border: 1px solid #e1e1e1;
-// 	width:100%;
-// 	text-align:left;
-// 	padding:50px;
-// 	border-top:none;
-// 	border-bottom:none;
-// }
-
-// .site-main{
-// 	margin-top:5%;
-// 	margin-left:5%;	
-
-// 	width:85%;
-// 	margin-bottom:5%;
-
-
-// }
 
 .widget-area{
 	display:flex;
@@ -552,13 +537,13 @@ border: 1px solid #e1e1e1;
 }
 
 
-.page-id-17{
-	.site-content{
-		display:flex;
-		border: 1px solid #e1e1e1;
+.page-template-default{
+// 	.site-content{
+// 		display:flex;
+// 		border: 1px solid #e1e1e1;
 
 		
-}
+// }
 
 .entry-title{
 	font-weight:bold;
