@@ -39,12 +39,12 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
-	color: black;
+	color: #f0e4d1;
 	border: 1px solid #ccc;
 	border-radius: 3px;
 
 	&:focus {
-		color: black;
+		color: #f0e4d1;
 	}
 }
 

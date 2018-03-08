@@ -426,7 +426,7 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
-  color: black;
+  color: #f0e4d1;
   border: 1px solid #ccc;
   border-radius: 3px; }
   input[type="text"]:focus,
@@ -435,7 +435,7 @@ textarea {
   input[type="password"]:focus,
   input[type="search"]:focus,
   textarea:focus {
-    color: black; }
+    color: #f0e4d1; }
 
 input[type="text"],
 input[type="email"],
@@ -559,8 +559,7 @@ a:hover {
       width: 5px;
       margin: 0; }
     .main-navigation .top-menu svg {
-      margin-left: 10px;
-      margin-top: 6px; }
+      margin-top: 3px; }
 
 /* Small menu. */
 .menu-toggle,
@@ -592,7 +591,7 @@ a:hover {
 
 .site-footer {
   background-image: url("../../images/darkwood.png");
-  height: 100%;
+  height: 380px;
   color: white; }
   .site-footer h3 {
     margin-bottom: 10px; }
@@ -712,7 +711,7 @@ a:hover {
   white-space: nowrap;
   width: 500px;
   margin-left: 85px;
-  margin-top: 10px; }
+  margin-top: 18px; }
 
 body {
   font-family: 'Merriweather';
@@ -732,7 +731,6 @@ a {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696 url(../../images/home-hero.jpg) no-repeat top;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../images/home-hero.jpg) no-repeat top;
   background-size: cover,cover;
-  background-attachment: fixed;
   height: 100vh; }
 
 .home .logo-front {
@@ -947,6 +945,9 @@ a {
   grid-area: ad4;
   font-size: 1.6rem; }
 
+.blog svg, .category svg, .tag svg, .date svg {
+  color: #248a83; }
+
 .blog ul, .category ul, .tag ul, .date ul {
   padding: 0;
   margin: 0; }
@@ -988,7 +989,7 @@ a {
   white-space: nowrap;
   width: 500px;
   margin-left: 85px;
-  margin-top: 10px; }
+  margin-top: 18px; }
 
 .blog .site-content, .category .site-content, .tag .site-content, .date .site-content {
   display: -webkit-box;
@@ -1098,90 +1099,6 @@ a {
     font-family: "Novecento";
     margin-bottom: 10px;
     font-weight: bold; }
-
-.page-template-default .entry-title {
-  font-weight: bold;
-  letter-spacing: 2px; }
-
-.page-template-default .widget-area {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  border: 1px solid #e1e1e1;
-  width: 100%;
-  text-align: left;
-  padding: 50px;
-  border-top: none;
-  border-bottom: none; }
-  .page-template-default .widget-area .widget-title {
-    font-family: "Novecento";
-    font-size: 1.5rem;
-    letter-spacing: 2px;
-    text-transform: uppercase; }
-
-.page-template-default ul {
-  padding: 0;
-  margin: 0; }
-
-.page-template-default li {
-  list-style-type: none; }
-
-.page-template-default .day-of-week {
-  font-weight: bold; }
-
-.page-template-default .widget {
-  font-size: 1.1rem; }
-
-.page-template-default .textwidget {
-  font-size: 1rem;
-  line-height: 1.75; }
-  .page-template-default .textwidget svg {
-    margin-right: 10px; }
-
-.page-template-default .menu a {
-  color: #248a83; }
-
-.page-template-default .menu a:hover {
-  color: #2f1339; }
-
-.page-template-default a {
-  color: #248a83; }
-
-.page-template-default a:hover {
-  color: #2f1339; }
-
-.page-template-default .site-brand {
-  position: absolute;
-  background: url(../../images/inhabitent-logo-tent.svg) no-repeat;
-  background-size: 50px 33px;
-  height: 33px;
-  overflow: hidden;
-  text-indent: 100%;
-  white-space: nowrap;
-  width: 500px;
-  margin-left: 85px;
-  margin-top: 10px; }
-
-.page-template-default .entry-title {
-  font-family: "Novecento";
-  text-transform: uppercase; }
-
-.page-template-default .site-main {
-  margin-top: 5%;
-  margin-left: 5%;
-  width: 85%;
-  margin-bottom: 5%; }
-
-.page-template-default .content-area {
-  width: 330%; }
-
-.page-template-default .widget-title {
-  font-family: "Novecento";
-  letter-spacing: 2px; }
 
 .entry-content h2 {
   font-family: "Novecento";
@@ -1310,7 +1227,7 @@ a {
   white-space: nowrap;
   width: 500px;
   margin-left: 85px;
-  margin-top: 10px; }
+  margin-top: 18px; }
 
 .post-template-default .site-content {
   display: -webkit-box;
@@ -1349,7 +1266,7 @@ a {
   white-space: nowrap;
   width: 500px;
   margin-left: 85px;
-  margin-top: 10px; }
+  margin-top: 18px; }
 
 .post-type-archive .subtitle {
   display: -webkit-box;
@@ -1436,7 +1353,7 @@ a {
   white-space: nowrap;
   width: 500px;
   margin-left: 85px;
-  margin-top: 10px; }
+  margin-top: 18px; }
 
 .single-product .site-content {
   border: 1px solid #e1e1e1; }
@@ -1534,7 +1451,7 @@ a {
   white-space: nowrap;
   width: 500px;
   margin-left: 85px;
-  margin-top: 10px; }
+  margin-top: 18px; }
 
 .tax-product_type .menu a {
   color: #248a83; }
@@ -1698,7 +1615,7 @@ a {
   white-space: nowrap;
   width: 500px;
   margin-left: 85px;
-  margin-top: 10px; }
+  margin-top: 18px; }
 
 .search .site-content {
   display: -webkit-box;
@@ -1776,7 +1693,7 @@ a {
   white-space: nowrap;
   width: 500px;
   margin-left: 85px;
-  margin-top: 10px; }
+  margin-top: 18px; }
 
 .error404 .widget-area {
   border: 1px solid #e1e1e1;
