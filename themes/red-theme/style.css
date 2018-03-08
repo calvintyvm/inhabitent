@@ -426,7 +426,7 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
-  color: #666;
+  color: black;
   border: 1px solid #ccc;
   border-radius: 3px; }
   input[type="text"]:focus,
@@ -435,7 +435,7 @@ textarea {
   input[type="password"]:focus,
   input[type="search"]:focus,
   textarea:focus {
-    color: #111; }
+    color: black; }
 
 input[type="text"],
 input[type="email"],
@@ -530,11 +530,27 @@ a:hover {
     color: white;
     font-family: "Novecento"; }
     .main-navigation .top-menu .search-field {
-      width: 200px; }
+      width: 350px;
+      border: none;
+      background: transparent;
+      margin-left: 30px;
+      text-transform: uppercase;
+      color: #f0e4d1; }
+    .main-navigation .top-menu .search-field:focus {
+      outline: none; }
     .main-navigation .top-menu .search-form {
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex; }
+      display: flex;
+      margin-top: 10px; }
+    .main-navigation .top-menu input::-webkit-input-placeholder {
+      color: #f0e4d1; }
+    .main-navigation .top-menu input:-ms-input-placeholder {
+      color: #f0e4d1; }
+    .main-navigation .top-menu input::-ms-input-placeholder {
+      color: #f0e4d1; }
+    .main-navigation .top-menu input::placeholder {
+      color: #f0e4d1; }
     .main-navigation .top-menu fieldset {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -544,7 +560,7 @@ a:hover {
       margin: 0; }
     .main-navigation .top-menu svg {
       margin-left: 10px;
-      margin-top: 10px; }
+      margin-top: 6px; }
 
 /* Small menu. */
 .menu-toggle,

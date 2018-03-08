@@ -6,7 +6,7 @@
             </span>
 			<!-- </a> -->
 		<label>
-			<input type="search" class="search-field" placeholder="SEARCH ..." value="<?php echo esc_attr( get_search_query() ); ?>" name="s" title="Search for:" />
+			<input type="search" class="search-field" placeholder="type and hit enter..." value="<?php echo esc_attr( get_search_query() ); ?>" name="s" title="Search for:" />
 		</label>
 </form>
 

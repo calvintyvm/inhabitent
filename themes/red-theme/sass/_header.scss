@@ -116,15 +116,41 @@ a:hover{
 			color:white;
 			font-family:"Novecento";
 			.search-field{
-				width:200px;
+				width:350px;
+				border:none;
+				background:transparent;
+				margin-left:30px;
+				text-transform: uppercase;
+				color:#f0e4d1;
+			
+				
+				
+
+			}
+			.search-field:focus{
+				outline:none;
+			
+				
+		
+
+				
 			}
 
 			.search-form{
 				display:flex;
+				margin-top:10px;
+				
+			}
+			input::placeholder{
+				color:#f0e4d1;
+				
+				
 			}
 
 			fieldset{
 				display:flex;
+				
+			
 			}
 			.icon-search{
 				width:5px;
@@ -132,8 +158,10 @@ a:hover{
 			}
 			svg{
 				margin-left: 10px;
-				margin-top: 10px;
+				margin-top: 6px;
+		
 			}
+			
 	}
 }
 
