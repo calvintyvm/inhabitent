@@ -7,8 +7,8 @@
 
 get_header(); ?>
 <div id="primary" class="content-area">
-	<main id="main" class="site-main" role="main">
-		<img class = "logo-front" src="http://tent.academy.red/wp-content/themes/inhabitent/images/inhabitent-logo-full.svg">
+	<main id="main" class="site-main">
+		<img class = "logo-front" src="http://tent.academy.red/wp-content/themes/inhabitent/images/inhabitent-logo-full.svg" alt="site-logo">
 			<?php if ( have_posts() ) : ?>
 			<?php if ( is_home() && ! is_front_page() ) : ?>
 			<header>
@@ -49,12 +49,12 @@ get_header(); ?>
 	'/images/product-type-icons/' . $term ->slug; ?>.svg" 
 		alt ="<?php echo $term->name;?>"/>
 	<p><?php echo $term->description; ?> </p>
-	<p>
+
 		<div class="shop-button">
 	<a href="<?php echo get_term_link ($term); ?>"
 	class="btn"><?php echo $term->name; ?> Stuff </a>
 	</div>
-	</p>
+
 	</div>
 	<?php endforeach; ?>
 	</div>
@@ -64,7 +64,7 @@ get_header(); ?>
 		
 	<!-- #primary -->
 	<h1 class="journal-title">Inhabitent Journal</h1>
-	<section>
+
 	
 
 	<div class="journal-container">
@@ -116,7 +116,7 @@ get_header(); ?>
 	<?php else : ?>
 	<h2>Nothing found!</h2>
 	<?php endif; ?>
-	</section>
+
 	</div>
 
 <!-- // php get_sidebar(); -->

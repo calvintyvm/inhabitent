@@ -15,23 +15,23 @@
 	<?php wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>
+	<!DOCTYPE html>
 		<div id="page" class="hfeed site">
 		<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
-			<header id="masthead" class="site-header" role="banner">
-
+			<header id="masthead" class="site-header">
+			
 				<div class="site-branding">
 				<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 				<a href="<?php echo esc_url( home_url( '/' ));?>"><div class="site-brand"></div></a>
 				</div>
 
-				<nav id="site-navigation" class="main-navigation" role="navigation">
+				<nav id="site-navigation" class="main-navigation">
 					<div class="top-menu">
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 					<?php get_search_form();?>
 					</div>
-		
 				</nav>
-		</div>
+
 			</header>
 
 			<div id="content" class="site-content">

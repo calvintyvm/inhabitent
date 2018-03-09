@@ -1180,7 +1180,8 @@ a {
   padding: .75rem;
   font-size: 1rem; }
   .home .product-type-block-wrapper .shop-button {
-    font-family: "Novecento"; }
+    font-family: "Novecento";
+    margin-bottom: 1.5rem; }
 
 .home .product-type-block-wrapper:hover {
   border-color: #d99054; }
@@ -1536,7 +1537,7 @@ a {
     width: 530px;
     height: 400px;
     margin-right: 50px;
-    margin-top: 20px; }
+    margin-top: 40px; }
 
 .single-product .entry-content {
   width: 45%; }
