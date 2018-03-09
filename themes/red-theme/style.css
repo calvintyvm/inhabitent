@@ -890,6 +890,9 @@ a:hover {
     font-family: "Merriweather"; }
   .site-footer .site-info {
     font-family: "Novecento"; }
+    .site-footer .site-info p {
+      font-family: "Novecento";
+      margin-bottom: 0; }
 
 .footer-container {
   display: -webkit-box;

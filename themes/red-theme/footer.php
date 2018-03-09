@@ -33,7 +33,7 @@
 					</div>
 					</div>
 					<div class="site-info">
-					COPYRIGHT © 2017 INHABITENT
+					<p>COPYRIGHT © 2017 INHABITENT</p>
 					</div><!-- .site-info -->
 
 			</footer><!-- #colophon -->
