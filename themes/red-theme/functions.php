@@ -99,6 +99,30 @@ function inhabitent_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'inhabitent_scripts' );
 
+
+
+
+function et_excerpt_length($length) {
+	return 50;
+}
+add_filter('excerpt_length', 'et_excerpt_length');
+
+ 
+/* Add a link  to the end of our excerpt contained in a div for styling purposes and to break to a new line on the page.*/
+ 
+function et_excerpt_more($more) {
+	global $post;
+	return ' ' . '[...]' .  '<div class="black-btn">' .  '<a href="' . get_permalink($post->ID) . '">' .'<class="view-full-post-btn">Read More → </a></div>';
+	
+}
+add_filter('excerpt_more', 'et_excerpt_more');
+
+
+
+
+
+
+
 /**
  * Custom template tags for this theme.
  */

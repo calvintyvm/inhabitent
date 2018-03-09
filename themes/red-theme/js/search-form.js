@@ -16,12 +16,12 @@
     });
  });
 })(jQuery);
-$(window).scroll(function(){
-    var currentScreenPosition  = $(document).scrollTop();
-    if (currentScreenPosition < $('.site-header').height() || currentScreenPosition < $('.page-template-about .entry-header').height()) {
-      $( '.top-menu' ).addClass( 'hero-top-menu' );
-    } else {
-      $( '.top-menu' ).removeClass( 'hero-top-menu' );
-    }
-  });
+// $(window).scroll(function(){
+//     var currentScreenPosition  = $(document).scrollTop();
+//     if (currentScreenPosition < $('.site-header').height() || currentScreenPosition < $('.page-template-about .entry-header').height()) {
+//       $( '.top-menu' ).addClass( 'hero-top-menu' );
+//     } else {
+//       $( '.top-menu' ).removeClass( 'hero-top-menu' );
+//     }
+//   });
   
