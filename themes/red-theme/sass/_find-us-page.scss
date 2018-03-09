@@ -1,5 +1,65 @@
 .page-id-17{
-    background-color:black;
+    .entry-content{
+        margin-left:8%;
+        margin-right:5%;
+    }
+    ul{
+		padding:0;
+		margin:0;
+	}
+	li{
+		list-style-type: none;
+
+	}
+
+	.day-of-week{
+		font-weight:bold;
+	}
+	.widget{
+		font-size: 1rem;
+		
+	}
+
+	.textwidget{
+
+			font-size: 1rem;
+			line-height:1.75;
+		svg{
+			margin-right:10px;
+		}
+
+	}
+	.menu{
+       
+		
+		a {
+			color: #248a83;
+		
+		
+		}
+		a:hover{
+
+			color:#2f1339;
+		}
+		
+	}
+
+	a{
+		color:#248a83;
+	}
+	a:hover{
+
+		color:#2f1339;
+	}
+	.top-menu{
+		input::placeholder{
+			color: darken(#f0e4d1,30%)
+        }
+        svg{
+            color:#248a83;
+        }
+	}
+    
     .top-menu{
         border-bottom: 1px solid #e1e1e1;
     }
@@ -7,9 +67,9 @@
     .widget-area{
         display:flex;
         flex-direction:column;
-    
+        width: 45%;
         border: 1px solid #e1e1e1;
-        width:100%;
+
         text-align:left;
         padding:50px;
         border-top:none;
