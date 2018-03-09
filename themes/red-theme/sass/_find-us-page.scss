@@ -1,0 +1,32 @@
+.page-id-17{
+    background-color:black;
+    .top-menu{
+        border-bottom: 1px solid #e1e1e1;
+    }
+
+    .widget-area{
+        display:flex;
+        flex-direction:column;
+    
+        border: 1px solid #e1e1e1;
+        width:100%;
+        text-align:left;
+        padding:50px;
+        border-top:none;
+        border-bottom:none;
+        border-right:none;
+    
+        .widget-title{
+            font-family:"Novecento";
+            font-size: 1.5rem;
+            letter-spacing:2px;
+            text-transform:uppercase;
+        }
+    }
+   
+.site-content{
+display:flex;
+justify-content:space-between;
+
+}
+}

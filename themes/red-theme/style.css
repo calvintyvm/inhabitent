@@ -761,6 +761,38 @@ a:hover {
   margin-right: auto;
   width: 1120px; }
 
+.page-id-17 {
+  background-color: black; }
+  .page-id-17 .top-menu {
+    border-bottom: 1px solid #e1e1e1; }
+  .page-id-17 .widget-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border: 1px solid #e1e1e1;
+    width: 100%;
+    text-align: left;
+    padding: 50px;
+    border-top: none;
+    border-bottom: none;
+    border-right: none; }
+    .page-id-17 .widget-area .widget-title {
+      font-family: "Novecento";
+      font-size: 1.5rem;
+      letter-spacing: 2px;
+      text-transform: uppercase; }
+  .page-id-17 .site-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
