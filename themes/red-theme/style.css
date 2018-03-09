@@ -325,7 +325,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     width: 750px; }
 
 .post-template-default .entry-footer {
+  font-family: "Novecento";
   text-transform: uppercase; }
+  .post-template-default .entry-footer .tags-links {
+    margin-left: 10px; }
 
 html {
   font-family: sans-serif;
