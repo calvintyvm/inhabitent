@@ -64,6 +64,7 @@ a{
 
 		height:100vh;
 		
+		
 		// display:flex;
 		// flex-direction:row;
 		// justify-content:space-between;
@@ -553,7 +554,7 @@ border: 1px solid #e1e1e1;
 	}
 
 
-	.black-btn{
+	.btn{
 		background: white;
 		border: none;
 		border-radius: 0;
@@ -573,7 +574,7 @@ border: 1px solid #e1e1e1;
 		}
 	
 		}
-		.black-btn:hover {
+		.btn:hover {
 
 			background-color:#248a83;
 
