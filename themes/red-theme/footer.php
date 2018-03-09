@@ -10,7 +10,7 @@
 <!-- #content -->
 </div>
 
-			<footer id="colophon" class="site-footer" role="contentinfo">
+			<footer id="colophon" class="site-footer">
 				<div class="footer-container">
 					<div class="contact">
 					<h3>Contact info </h3>
@@ -35,7 +35,7 @@
 					<div class="site-info">
 					COPYRIGHT © 2017 INHABITENT
 					</div><!-- .site-info -->
-				</div>
+
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
 
