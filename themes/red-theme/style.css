@@ -1381,6 +1381,9 @@ a {
   font-size: 2.1rem;
   margin-top: 10px; }
 
+.post-type-archive .main-navigation svg {
+  color: #248a83; }
+
 .post-type-archive .page-header {
   margin-bottom: 4%; }
 
