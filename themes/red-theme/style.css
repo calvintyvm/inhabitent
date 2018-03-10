@@ -761,7 +761,10 @@ textarea {
   margin-right: auto;
   width: 1120px; }
 
-.page .site-brand {
+.page .site-main, .error404 .site-main {
+  margin-left: 9.5%; }
+
+.page .site-brand, .error404 .site-brand {
   position: absolute;
   background: url(../../images/inhabitent-logo-tent.svg) no-repeat;
   background-size: 50px 33px;
@@ -773,7 +776,7 @@ textarea {
   margin-left: 85px;
   margin-top: 12px; }
 
-.page .wpcf7-submit {
+.page .wpcf7-submit, .error404 .wpcf7-submit {
   background: #248a83;
   border: none;
   border-radius: 0;
@@ -786,72 +789,74 @@ textarea {
   letter-spacing: 0px;
   display: inline-block; }
 
-.page .wpcf7-submit:hover {
+.page .wpcf7-submit:hover, .error404 .wpcf7-submit:hover {
   background-color: #0f3936; }
 
-.page .wpcf7 {
+.page .wpcf7, .error404 .wpcf7 {
   text-transform: uppercase;
   font-family: 'Novecento'; }
-  .page .wpcf7 span {
+  .page .wpcf7 span, .error404 .wpcf7 span {
     color: red; }
 
-.page h2 {
+.page h2, .error404 h2 {
   text-transform: uppercase; }
 
-.page .entry-content {
-  margin-left: 8%;
-  margin-right: 5%; }
+.page .entry-content, .page .content-area, .error404 .entry-content, .error404 .content-area {
+  width: 330%;
+  margin-top: 2%; }
+  .page .entry-content p, .page .content-area p, .error404 .entry-content p, .error404 .content-area p {
+    width: 700px; }
 
-.page ul {
+.page ul, .error404 ul {
   padding: 0;
   margin: 0; }
 
-.page li {
+.page li, .error404 li {
   list-style-type: none; }
 
-.page .day-of-week {
+.page .day-of-week, .error404 .day-of-week {
   font-weight: bold; }
 
-.page .widget {
+.page .widget, .error404 .widget {
   font-size: 1rem; }
 
-.page .textwidget {
+.page .textwidget, .error404 .textwidget {
   font-size: 1rem;
   line-height: 1.75; }
-  .page .textwidget svg {
+  .page .textwidget svg, .error404 .textwidget svg {
     margin-right: 10px; }
 
-.page .menu a {
+.page .menu a, .error404 .menu a {
   color: #248a83; }
 
-.page .menu a:hover {
+.page .menu a:hover, .error404 .menu a:hover {
   color: #2f1339; }
 
-.page a {
+.page a, .error404 a {
   color: #248a83; }
 
-.page a:hover {
+.page a:hover, .error404 a:hover {
   color: #2f1339; }
 
-.page .top-menu input::-webkit-input-placeholder {
+.page .top-menu input::-webkit-input-placeholder, .error404 .top-menu input::-webkit-input-placeholder {
   color: #caa05e; }
 
-.page .top-menu input:-ms-input-placeholder {
+.page .top-menu input:-ms-input-placeholder, .error404 .top-menu input:-ms-input-placeholder {
   color: #caa05e; }
 
-.page .top-menu input::-ms-input-placeholder {
+.page .top-menu input::-ms-input-placeholder, .error404 .top-menu input::-ms-input-placeholder {
   color: #caa05e; }
 
-.page .top-menu input::placeholder {
+.page .top-menu input::placeholder, .error404 .top-menu input::placeholder {
   color: #caa05e; }
 
-.page .top-menu svg {
+.page .top-menu svg, .error404 .top-menu svg {
   color: #248a83; }
 
-.page .top-menu {
+.page .top-menu, .error404 .top-menu {
   border-bottom: 1px solid #e1e1e1; }
 
-.page .widget-area {
+.page .widget-area, .error404 .widget-area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -859,26 +864,43 @@ textarea {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 45%;
+  width: 100%;
   border: 1px solid #e1e1e1;
   text-align: left;
   padding: 50px;
   border-top: none;
   border-bottom: none;
   border-right: none; }
-  .page .widget-area .widget-title {
+  .page .widget-area .widget-title, .error404 .widget-area .widget-title {
     font-family: "Novecento";
     font-size: 1.5rem;
     letter-spacing: 2px;
     text-transform: uppercase; }
 
-.page .site-content {
+.page .site-content, .error404 .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+
+.error404 .search-field {
+  color: #666;
+  background-color: #f4f4f4;
+  border: 1px solid #e1e1e1;
+  border-radius: 0;
+  height: 30px;
+  text-transform: uppercase;
+  font-size: 15px;
+  width: 200px; }
+
+.error404 h1, .error404 h2 {
+  font-family: "Novecento"; }
+
+.error404 .page-title {
+  text-transform: uppercase;
+  font-size: 2.4rem; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -1910,82 +1932,6 @@ a {
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 5%; }
-
-.error404 .site-main {
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-bottom: 10%; }
-
-.error404 .site-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border: 1px solid #e1e1e1; }
-  .error404 .site-content .not-found {
-    margin-right: 5%; }
-
-.error404 ul {
-  padding: 0;
-  margin: 0; }
-
-.error404 li {
-  list-style-type: none; }
-
-.error404 .day-of-week {
-  font-weight: bold; }
-
-.error404 .widget {
-  font-size: 1.1rem; }
-
-.error404 .widget-title {
-  font-family: "Novecento";
-  letter-spacing: 2px;
-  text-transform: uppercase; }
-
-.error404 .textwidget {
-  font-size: 1rem;
-  line-height: 1.75; }
-  .error404 .textwidget svg {
-    margin-right: 10px; }
-
-.error404 .menu a {
-  color: #248a83; }
-
-.error404 .menu a:hover {
-  color: #2f1339; }
-
-.error404 a {
-  color: #248a83; }
-
-.error404 a:hover {
-  color: #2f1339; }
-
-.error404 .site-brand {
-  position: absolute;
-  background: url(../../images/inhabitent-logo-tent.svg) no-repeat;
-  background-size: 50px 33px;
-  height: 33px;
-  overflow: hidden;
-  text-indent: 100%;
-  white-space: nowrap;
-  width: 500px;
-  margin-left: 85px;
-  margin-top: 12px; }
-
-.error404 .widget-area {
-  border: 1px solid #e1e1e1;
-  margin-left: 110px;
-  border-top: none;
-  border-bottom: none;
-  border-right: none; }
-  .error404 .widget-area .widget_archive {
-    margin-left: 60px; }
-
-.error404 .widget_text {
-  margin-left: 60px; }
-
-.error404 .business-hours-widget-class {
-  margin-left: 60px; }
 
 /*--------------------------------------------------------------
 # Media

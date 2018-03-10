@@ -1,4 +1,12 @@
-.page{
+
+
+
+
+.page,.error404{
+
+    .site-main{
+        margin-left:9.5%;
+    }
     
     .site-brand{
 		position:absolute;
@@ -51,9 +59,12 @@
     h2{
         text-transform:uppercase;
     }
-    .entry-content{
-        margin-left:8%;
-        margin-right:5%;
+    .entry-content,.content-area{
+        width:330%;
+        margin-top:2%;
+        p{
+            width:700px;
+        }
     }
     ul{
 		padding:0;
@@ -119,7 +130,7 @@
     .widget-area{
         display:flex;
         flex-direction:column;
-        width: 45%;
+        width: 100%;
         border: 1px solid #e1e1e1;
 
         text-align:left;
@@ -141,4 +152,27 @@ display:flex;
 justify-content:space-between;
 
 }
+}
+
+
+.error404{
+    .search-field{
+        color: #666;
+        background-color: #f4f4f4;
+        border: 1px solid #e1e1e1;
+        border-radius: 0;
+        height: 30px;
+        text-transform:uppercase;
+        font-size:15px;
+        width:200px;
+    }
+    h1,h2{
+        font-family:"Novecento";
+    }
+.page-title{
+    text-transform:uppercase;
+    font-size: 2.4rem;
+}
+
+
 }
