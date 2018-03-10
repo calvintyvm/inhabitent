@@ -40,6 +40,16 @@ a{
 	text-decoration: none;
 }
 .home, .page-template-about{
+	.content-area{
+		margin-left:5%;
+		margin-right:5%;
+		margin-bottom:5%;
+		width:80%;
+		p{
+			width:120%;
+			
+		}
+	}
 
 	.site-brand{
 		position:absolute;
@@ -542,8 +552,9 @@ border: 1px solid #e1e1e1;
 		margin-top:5%;
 		font-size: 1rem;
 		line-height: 1.75;
+		margin-left: 50px;
 		h2{
-			text-align:center;
+
 			font-size: 2.1rem;
 			letter-spacing:2px;
 			font-family:"Novecento";
@@ -1133,6 +1144,8 @@ a:hover{
 	margin-left:5%;
 	margin-right:5%;
 	margin-bottom:5%;
+
+	
 }
 
 }

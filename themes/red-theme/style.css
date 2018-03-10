@@ -1136,6 +1136,14 @@ body {
 a {
   text-decoration: none; }
 
+.home .content-area, .page-template-about .content-area {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  width: 80%; }
+  .home .content-area p, .page-template-about .content-area p {
+    width: 120%; }
+
 .home .site-brand, .page-template-about .site-brand {
   position: absolute;
   background: url(../../images/inhabitent-logo-tent-white.svg) no-repeat;
@@ -1505,9 +1513,9 @@ a {
   margin-bottom: 8%;
   margin-top: 5%;
   font-size: 1rem;
-  line-height: 1.75; }
+  line-height: 1.75;
+  margin-left: 50px; }
   .page-template-about .about-container h2 {
-    text-align: center;
     font-size: 2.1rem;
     letter-spacing: 2px;
     font-family: "Novecento";
