@@ -63,65 +63,11 @@ get_header(); ?>
 
 		
 	<!-- #primary -->
-	<h1 class="journal-title">Inhabitent Journal</h1>
 
-	
-
-	<div class="journal-container">
-
-
-
-		<?php
-			$args = array(
-			'order' => 'ASC',
-			'posts_per_page' => 3,
-			'post_type' => 'post' );
-		
-	$journal = new WP_Query( $args ); /* $args set above*/ ?>
-	<?php if ( $journal->have_posts() ) : ?>
-	<?php while ( $journal->have_posts() ) : $journal->the_post(); ?>
-
-	<div class="journal-art">
-
-	<?php if(has_post_thumbnail()) : ?>
-	<div class="thumbnail-wrapper">
-	<?php the_post_thumbnail ('medium');?>
-	</div>
-	<div class="post-info-wrapper">
-		<div class="entry-meta">
-			
-			<?php red_starter_posted_on(); ?>  
-			<?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> 
-
-	
-	</div>
-	<div class="entry-title-con">
-	<h1>
-		<?php the_title(); ?>
-	</h1>
-	<?php endif;?>
-
-
-	<a class ="black-btn" href="<?php the_permalink(); ?>">
-	Read Entry
-	</a>
-	</div>
-	</div>
-	</div>
-
-
-	<!-- .entry-meta -->
-	<?php endwhile; ?>
-	<?php wp_reset_postdata(); ?>
-	<?php else : ?>
-	<h2>Nothing found!</h2>
-	<?php endif; ?>
-
-	</div>
 
 <!-- // php get_sidebar(); -->
 
-<section>
+<!-- <section>
 <h2 class="shop-title">Latest Adventures</h2>
 <div class="adventures-container">
 
@@ -139,7 +85,7 @@ get_header(); ?>
 			</div>
 </div>
 
-</section>
+</section> -->
 
 
 <!-- get_sidebar(); ?> -->
