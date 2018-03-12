@@ -117,6 +117,14 @@ function et_excerpt_more($more) {
 }
 add_filter('excerpt_more', 'et_excerpt_more');
 
+// Add theme support for Featured Images
+add_theme_support('post-thumbnails', array(
+	'post',
+	'page',
+	'adventure',
+	'product',
+	));
+
 
 
 

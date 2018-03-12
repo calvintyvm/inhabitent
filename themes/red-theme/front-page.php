@@ -140,7 +140,60 @@ get_header(); ?>
 </div>
 
 </section> -->
+<section class="latest-adventure">
+			<h1>latest adventure</h1>
+    
+<?php			
+$args_adventure = array(
+   'order' => 'ASC',
+   'posts_per_page' => 4,
+   'post_type' => 'adventure',
+);
+$adventure = new WP_Query( $args_adventure ); ?>
 
+<?php $adventure = new WP_Query( $args_adventure ); /* $args set above*/ ?>
+
+
+<?php if ( $adventure->have_posts() ) : ?>
+<div class="adventures-container">
+	 <?php while ( $adventure->have_posts() ) : $adventure->the_post(); ?>
+	 
+<div class="adventure-wrapper">
+    <div class="adventure-thumbnail">
+	 <?php if ( has_post_thumbnail() ) : ?>
+			<?php the_post_thumbnail( 'large' ); ?>
+        <?php endif; ?>
+</div>
+			<div class="entry-meta-adventure">
+			
+            <h1><?php the_title(); ?></h1>
+
+			<a class="buttonReadMoreAdv" href="<?php the_permalink();?>"> read more</a>
+            
+        </div>
+
+
+        
+        
+        <!-- .entry-meta -->
+
+
+</div>
+<!-- adventure-wrapper -->
+	 <?php endwhile; ?>
+
+</div>
+<!-- .journal-blocks -->
+<a class="btn" href="<?php echo esc_url( home_url( '/' )).'adventure/';?>"> more adventures</a>
+
+
+	 
+<?php the_posts_navigation(); ?>
+   <?php wp_reset_postdata(); ?>
+<?php else : ?>
+      <h2>Nothing found!</h2>
+<?php endif; ?>
+</section>
 
 
 

@@ -1413,87 +1413,59 @@ a {
   border: 1px solid #e1e1e1; }
 
 .home .adventures-container, .page-template-about .adventures-container {
+  height: 600px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 100px 100px 100px 100px;
-  grid-gap: 20px;
-  margin: 0 auto;
-  grid-template-areas: "ad1 ad1 ad2 ad2" "ad1 ad1 ad2 ad2" "ad1 ad1 ad3 ad4" "ad1 ad1 ad3 ad4";
-  text-transform: uppercase;
-  margin-bottom: 80px;
-  margin-right: 5%;
-  margin-left: 5%; }
-  .home .adventures-container p, .page-template-about .adventures-container p {
-    text-transform: none;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px;
+  margin-bottom: 3.75rem; }
+  .home .adventures-container h1, .page-template-about .adventures-container h1 {
+    font-family: sans-serif;
+    text-transform: capitalize;
+    font-weight: 300;
     color: white;
     text-align: left;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 5%; }
-  .home .adventures-container p:hover, .page-template-about .adventures-container p:hover {
-    color: #ecc6a7; }
-
-.home .ad1, .page-template-about .ad1 {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696 url(../../images/adventure/canoe-girl.jpg) center no-repeat;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../images/adventure/canoe-girl.jpg) center no-repeat;
-  background-size: 200vh;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  grid-area: ad1;
-  font-size: 3rem; }
-
-.home .ad2, .page-template-about .ad2 {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696 url(../../images/adventure/beach-bonfire.jpg) center no-repeat;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../images/adventure/beach-bonfire.jpg) center no-repeat;
-  background-size: 130vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  grid-area: ad2;
-  font-size: 2.4rem; }
-
-.home .ad3, .page-template-about .ad3 {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696 url(../../images/adventure/mountain-hikers.jpg) center no-repeat;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../images/adventure/mountain-hikers.jpg) center no-repeat;
-  background-size: 130vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  grid-area: ad3;
-  font-size: 1.6rem; }
-
-.home .ad4, .page-template-about .ad4 {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696 url(../../images/adventure/night-sky.jpg) center no-repeat;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../images/adventure/night-sky.jpg) center no-repeat;
-  background-size: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  grid-area: ad4;
-  font-size: 1.6rem; }
+    padding-bottom: 3rem; }
+  .home .adventures-container .adventure-wrapper, .page-template-about .adventures-container .adventure-wrapper {
+    position: relative;
+    overflow: hidden; }
+    .home .adventures-container .adventure-wrapper .entry-meta-adventure, .page-template-about .adventures-container .adventure-wrapper .entry-meta-adventure {
+      padding: 2rem;
+      position: absolute;
+      top: 0; }
+      .home .adventures-container .adventure-wrapper .entry-meta-adventure h1, .page-template-about .adventures-container .adventure-wrapper .entry-meta-adventure h1 {
+        margin: 0; }
+    .home .adventures-container .adventure-wrapper .adventure-thumbnail, .page-template-about .adventures-container .adventure-wrapper .adventure-thumbnail {
+      height: 100%;
+      position: relative;
+      overflow: hidden; }
+      .home .adventures-container .adventure-wrapper .adventure-thumbnail img, .page-template-about .adventures-container .adventure-wrapper .adventure-thumbnail img {
+        position: absolute;
+        max-width: none;
+        max-height: none;
+        height: auto;
+        width: 180%;
+        left: -40%; }
+      .home .adventures-container .adventure-wrapper .adventure-thumbnail:after, .page-template-about .adventures-container .adventure-wrapper .adventure-thumbnail:after {
+        background: rgba(0, 0, 0, 0.35);
+        content: " ";
+        height: 100%;
+        width: 100%;
+        position: absolute; }
+  .home .adventures-container :nth-child(1), .page-template-about .adventures-container :nth-child(1) {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3; }
+    .home .adventures-container :nth-child(1) h1, .page-template-about .adventures-container :nth-child(1) h1 {
+      font-size: 50px; }
+  .home .adventures-container :nth-child(2), .page-template-about .adventures-container :nth-child(2) {
+    grid-column: 3 / 5;
+    grid-row: 1 / 2; }
+    .home .adventures-container :nth-child(2) img, .page-template-about .adventures-container :nth-child(2) img {
+      top: -70%; }
+  .home .adventures-container :nth-child(3) h1,
+  .home .adventures-container :nth-child(4) h1, .page-template-about .adventures-container :nth-child(3) h1,
+  .page-template-about .adventures-container :nth-child(4) h1 {
+    font-size: 18px; }
 
 .page-template-about h1 {
   color: white;
