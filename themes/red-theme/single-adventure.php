@@ -19,7 +19,12 @@ get_header(); ?>
 		
 
 		<?php endwhile; // End of the loop. ?>
-			</div>
+		<div class="btn-container">
+		<button type="button" class="btn"><i class="fab fa-facebook-f"></i>like</button>
+		<button type="button" class="btn"><i class="fab fa-twitter"></i>tweet</button>
+		<button type="button" class="btn"><i class="fab fa-pinterest-p"></i>pin</button>
+		</div>
+		</div>
 		</main><!-- #main -->
 		
 	</div><!-- #primary -->
