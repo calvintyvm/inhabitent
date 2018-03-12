@@ -1957,8 +1957,10 @@ a {
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
   width: 1100px;
+  margin: 0 auto;
   padding-top: 50px;
-  margin-bottom: 80px; }
+  margin-bottom: 80px;
+  border-top: 1px dashed #c8c8c8; }
   .adventure-page-blocks h2 {
     position: absolute;
     top: 0;
@@ -1978,6 +1980,8 @@ a {
   .adventure-page-blocks article {
     position: relative;
     height: 500px; }
+    .adventure-page-blocks article .entry-header h2 a:hover {
+      color: #ecc6a7; }
     .adventure-page-blocks article::after {
       background: rgba(0, 0, 0, 0.3);
       content: "";
@@ -1995,18 +1999,25 @@ a {
       margin-left: 20px;
       padding: 10px 20px;
       border: 1px solid white;
+      font-family: "Novecento";
       text-transform: uppercase;
       color: white;
       z-index: 10; }
+      .adventure-page-blocks article .read-more-button:hover {
+        background-color: #248a83;
+        border: 0 solid;
+        text-decoration: none;
+        color: white; }
 
-.post-type-archive-adventures .page-header {
+.post-type-archive-adventure .page-header {
   margin-top: 100px; }
-  .post-type-archive-adventures .page-header h1 {
+  .post-type-archive-adventure .page-header h1 {
     font-weight: bold;
     padding: 0;
     text-align: center;
     text-transform: uppercase;
-    font-size: 2.5em; }
+    font-size: 2.5em;
+    font-family: "Novecento"; }
 
 /*--------------------------------------------------------------
 # Media
