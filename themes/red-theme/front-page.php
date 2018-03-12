@@ -141,7 +141,7 @@ get_header(); ?>
 
 </section> -->
 <section class="latest-adventure">
-			<h1>latest adventure</h1>
+			<h1 class="adventure-title">latest adventure</h1>
     
 <?php			
 $args_adventure = array(
@@ -188,7 +188,7 @@ $adventure = new WP_Query( $args_adventure ); ?>
 
 
 	 
-<?php the_posts_navigation(); ?>
+
    <?php wp_reset_postdata(); ?>
 <?php else : ?>
       <h2>Nothing found!</h2>
