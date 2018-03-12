@@ -70,3 +70,6 @@ function inhabitent_hero_image(){
  
 add_action("wp_enqueue_scripts" , 'inhabitent_hero_image');
 
+
+
+

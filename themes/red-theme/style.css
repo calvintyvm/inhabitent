@@ -2019,6 +2019,52 @@ a {
     font-size: 2.5em;
     font-family: "Novecento"; }
 
+.adventure-template-default .site-brand {
+  position: absolute;
+  background: url(../../images/inhabitent-logo-tent-white.svg) no-repeat;
+  background-size: 50px 33px;
+  height: 33px;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  width: 500px;
+  margin-left: 85px;
+  margin-top: 12px; }
+
+.adventure-template-default .site-header {
+  position: absolute; }
+
+.adventure-template-default .entry-header img {
+  width: 100%;
+  height: 130%; }
+
+.adventure-template-default .entry-content {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.adventure-template-default .entry-title {
+  text-align: center;
+  margin: 0;
+  margin-top: 40px;
+  padding: 0;
+  font-weight: bold;
+  font-size: 2.3em;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+
+.adventure-template-default .entry-meta {
+  text-align: center; }
+
+.adventure-template-default h4 {
+  margin: 0;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 1.1em; }
+
+.adventure-template-default .social-media-links {
+  margin-bottom: 80px; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/

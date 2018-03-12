@@ -1,3 +1,5 @@
+//archive
+
 .adventure-page-blocks {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -96,3 +98,64 @@
     }
   }
 }
+
+//single
+
+.adventure-template-default {
+    .site-brand{
+		position:absolute;
+		background: url(../../images/inhabitent-logo-tent-white.svg) no-repeat;
+		background-size: 50px 33px;
+		height: 33px;
+		overflow: hidden;
+		text-indent: 100%;
+		white-space: nowrap;
+		width: 500px;
+		margin-left:85px;
+		margin-top:12px;
+	}
+   .site-header{
+       position:absolute;
+   }
+   .entry-header{
+   img{
+       width:100%;
+       height:130%; 
+   }
+}
+  
+    .entry-content {
+      width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      p {
+
+      }
+    }
+  
+    .entry-title {
+      text-align: center;
+      margin: 0;
+      margin-top: 40px;
+      padding: 0;
+      font-weight: bold;
+      font-size: 2.3em;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+
+    }
+    .entry-meta{
+        text-align:center;
+    }
+  
+    h4 {
+      margin: 0;
+      font-weight: normal;
+      text-transform: uppercase;
+      font-size: 1.1em;
+    }
+  
+    .social-media-links {
+      margin-bottom: 80px;
+    }
+  }
