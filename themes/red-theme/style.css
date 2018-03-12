@@ -1425,7 +1425,7 @@ a {
     padding: .75rem 1.5rem; }
     .home .latest-adventure .buttonReadMoreAdv:hover, .page-template-about .latest-adventure .buttonReadMoreAdv:hover {
       background-color: #248a83;
-      border: 0 solid;
+      border: 1px solid #248a83;
       text-decoration: none;
       color: white; }
   .home .latest-adventure .btn, .page-template-about .latest-adventure .btn {
@@ -1465,6 +1465,8 @@ a {
       color: white;
       text-align: left;
       padding-bottom: 3rem; }
+      .home .latest-adventure .adventures-container h1:hover, .page-template-about .latest-adventure .adventures-container h1:hover {
+        color: #ecc6a7; }
     .home .latest-adventure .adventures-container .adventure-wrapper, .page-template-about .latest-adventure .adventures-container .adventure-wrapper {
       position: relative;
       overflow: hidden; }
@@ -1689,7 +1691,10 @@ a {
     margin-right: 10px; }
 
 .single-product .btn:hover {
-  background-color: #248a83; }
+  background-color: #248a83;
+  border: 1px solid #248a83;
+  text-decoration: none;
+  color: white; }
 
 .single-product article {
   display: -webkit-box;
@@ -2005,7 +2010,7 @@ a {
       z-index: 10; }
       .adventure-page-blocks article .read-more-button:hover {
         background-color: #248a83;
-        border: 0 solid;
+        border: 1px solid #248a83;
         text-decoration: none;
         color: white; }
 
@@ -2088,7 +2093,10 @@ a {
   letter-spacing: 0px;
   display: inline-block; }
   .adventure-template-default .btn:hover {
-    background-color: #248a83; }
+    background-color: #248a83;
+    border: 1px solid #248a83;
+    text-decoration: none;
+    color: white; }
 
 /*--------------------------------------------------------------
 # Media
