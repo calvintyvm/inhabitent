@@ -217,7 +217,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   position: absolute;
   top: 0;
   text-transform: uppercase;
-  font-family: Novecento;
+  font-family: "Novecento";
   font-size: 2.1rem;
   padding: .75rem 1rem;
   width: 500px;
@@ -243,7 +243,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   right: 23;
   bottom: 0;
   font-size: 1rem;
-  font-family: Novecento;
+  font-family: "Novecento";
   padding: 5px 20px; }
   .post-template-default .entry-meta a {
     color: white; }
@@ -561,7 +561,6 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -797,7 +796,7 @@ textarea {
 
 .page .wpcf7, .error404 .wpcf7 {
   text-transform: uppercase;
-  font-family: 'Novecento'; }
+  font-family: "Novecento"; }
   .page .wpcf7 span, .error404 .wpcf7 span {
     color: red; }
 
@@ -1130,7 +1129,7 @@ textarea {
   background-color: #e1e1e1; }
 
 body {
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   color: #404040;
   line-height: 1.75;
   font-size: 1rem;
@@ -1462,7 +1461,7 @@ a {
     grid-gap: 20px;
     margin-bottom: 3.75rem; }
     .home .latest-adventure .adventures-container h1, .page-template-about .latest-adventure .adventures-container h1 {
-      font-family: 'Merriweather';
+      font-family: "Merriweather";
       text-transform: capitalize;
       font-weight: 300;
       color: white;

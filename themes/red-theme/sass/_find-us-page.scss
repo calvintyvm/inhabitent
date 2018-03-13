@@ -51,7 +51,7 @@
 
     .wpcf7{
         text-transform: uppercase;
-        font-family:'Novecento';
+        font-family:$font-title;
         span{
             color:red;
         }
@@ -140,7 +140,7 @@
         border-right:none;
     
         .widget-title{
-            font-family:"Novecento";
+            font-family:$font-title;
             font-size: 1.5rem;
             letter-spacing:2px;
             text-transform:uppercase;
@@ -167,7 +167,7 @@ justify-content:space-between;
         width:200px;
     }
     h1,h2{
-        font-family:"Novecento";
+        font-family:$font-title;
     }
 .page-title{
     text-transform:uppercase;

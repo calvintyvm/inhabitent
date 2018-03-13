@@ -69,7 +69,7 @@
       margin-left: 20px;
       padding: 10px 20px;
       border: 1px solid white;
-      font-family:"Novecento";
+      font-family:$font-title;
 
       text-transform: uppercase;
       color: white;
@@ -90,7 +90,7 @@
       text-align: center;
       text-transform: uppercase;
       font-size: 2.5em;
-      font-family:"Novecento";
+      font-family:$font-title;
 
     }
   }
@@ -143,12 +143,12 @@
       font-size: 2.3em;
       letter-spacing: 2px;
       text-transform: uppercase;
-      font-family:"Novecento";
+      font-family:$font-title;
 
     }
     .entry-meta{
         text-align:center;
-        font-family:"Novecento";
+        font-family:$font-title;
         font-size:1.5rem;
     }
   

@@ -25,7 +25,7 @@
 
 
 body{
-	font-family:'Merriweather';
+	font-family:$font-main;
 	color:#404040;
 	line-height:1.75;
 	font-size:1rem;
@@ -188,7 +188,7 @@ a{
 			font-size:1rem;
 			text-transform: uppercase;
 			color:white;
-			font-family:"Novecento";
+			font-family:$font-title;
 				
 		
 	
@@ -294,7 +294,7 @@ a{
 .shop-title{
 	text-align:center;
 	font-size:2.4rem;
-	font-family:"Novecento";
+	font-family:$font-title;
 	font-weight:400;
 	letter-spacing: 2px;
 	text-transform: uppercase;
@@ -338,7 +338,7 @@ a{
 	font-size: 1rem;
 
 	.shop-button{
-		font-family:"Novecento";
+		font-family:$font-title;
 		margin-bottom: 1.5rem;
 		
 	}
@@ -352,7 +352,7 @@ a{
 .journal-title{
 	text-align:center;
 	font-size:2.4rem;
-	font-family:"Novecento";
+	font-family:$font-title;
 	font-weight:400;
 	margin-top:5%;
 	margin-bottom:3%;
@@ -388,7 +388,7 @@ a{
 		line-height:1.25;
 		letter-spacing:2px;
 		text-transform:uppercase;
-		font-family:"Novecento";
+		font-family:$font-title;
 		color:#248a83;
 
 		h1:hover{
@@ -442,7 +442,7 @@ border: 1px solid #e1e1e1;
 		text-transform: uppercase;
 		border: 1px solid white;
 		color:white;
-		font-family:"Novecento";
+		font-family:$font-title;
 		
 		background-color: none;
 		font-size: 1.2rem;
@@ -466,7 +466,7 @@ border: 1px solid #e1e1e1;
 		padding: 0.8rem 2.5rem;
 		margin-left:65px;
 		text-transform: uppercase;
-		font-family:"Novecento";
+		font-family:$font-title;
 
 		&:hover{
 			background-color:darken(#248a83,5%);
@@ -479,7 +479,7 @@ border: 1px solid #e1e1e1;
 .adventure-title{
     text-align: center;
     font-size: 2.4rem;
-    font-family: "Novecento";
+    font-family: $font-title;
     font-weight: 400;
     margin-top: 5%;
     margin-bottom: 3%;
@@ -498,7 +498,7 @@ border: 1px solid #e1e1e1;
 	grid-gap: 20px;
 	margin-bottom: 3.75rem;
 	h1 {
-	  font-family: 'Merriweather';
+	  font-family: $font-main;
 	  text-transform: capitalize;
 	  font-weight: 300;
 	  color: white;
@@ -586,7 +586,7 @@ border: 1px solid #e1e1e1;
 		left:50%;
 		transform: translate(-50%,-50%);
 		font-size: 3rem;
-		font-family:"Novecento";
+		font-family:$font-title;
 		text-transform:uppercase;
 		letter-spacing:2px;
 		
@@ -604,7 +604,7 @@ border: 1px solid #e1e1e1;
 
 			font-size: 2.1rem;
 			letter-spacing:2px;
-			font-family:"Novecento";
+			font-family:$font-title;
 			margin-bottom:10px;
 			font-weight:bold;
 		}
@@ -620,7 +620,7 @@ border: 1px solid #e1e1e1;
 
 .entry-content{
 	h2{
-		font-family:"Novecento";
+		font-family:$font-title;
 		letter-spacing:2px;
 		font-weight:bold;
 		font-size:2.1rem;
@@ -686,7 +686,7 @@ border: 1px solid #e1e1e1;
 		margin-right:35%;
 		font-size: 1.2rem;
 		text-transform:uppercase;
-		font-family:"Novecento";
+		font-family:$font-title;
 
 		a{
 			color:#248a83;
@@ -709,7 +709,7 @@ border: 1px solid #e1e1e1;
 		font-size:1.3rem;
 	}
 	.products-title{
-		font-family:"Novecento";
+		font-family:$font-title;
 	}
 
 	.products-container{
@@ -849,11 +849,11 @@ border: 1px solid #e1e1e1;
 		line-height: 1.25;
 		font-size: 2.4rem;
 		text-transform: uppercase;
-		font-family:"Novecento";
+		font-family:$font-title;
 	}
 	.price-title{
 		font-size: 1.8rem;
-		font-family:"Novecento";
+		font-family:$font-title;
 		font-weight:lighter;
 		
 	}
@@ -933,7 +933,7 @@ border: 1px solid #e1e1e1;
 		font-size:2.4rem;
 		margin-top:8%;
 		margin-bottom:8%;
-		font-family:"Novecento";
+		font-family:$font-title;
 	}
 	.taxonomy-description{
 		font-size: 1rem;
@@ -1068,13 +1068,13 @@ margin-bottom:10px;
 		padding:20px;
 		color:black;
 		width:160px;
-		font-family:"Novecento";
+		font-family:$font-title;
 		padding:.75rem 1.5rem;
 	}
 	.entry-title{
 		font-size:2.1rem;
 		text-transform:uppercase;
-		font-family:"Novecento";
+		font-family:$font-title;
 	}
 
 
@@ -1093,7 +1093,7 @@ margin-bottom:10px;
 		border-bottom:none;
 	
 		.widget-title{
-			font-family:"Novecento";
+			font-family:$font-title;
 			font-size: 1.5rem;
 			letter-spacing:2px;
 			text-transform:uppercase;
@@ -1170,7 +1170,7 @@ a:hover{
 
 .page-title{
 	text-transform:uppercase;
-	font-family:"Novecento";
+	font-family:$font-title;
 	font-size: 2.4rem;
 	letter-spacing:2px;
 }
@@ -1220,7 +1220,7 @@ a:hover{
 // 	}
 
 // 	.widget-title{
-// 		font-family:"Novecento";
+// 		font-family:$font-title;
 // 		letter-spacing:2px;
 // 		text-transform:uppercase;
 // 	}
