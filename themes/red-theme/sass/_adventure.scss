@@ -75,10 +75,7 @@
       color: white;
       z-index: 10;
       &:hover {
-        background-color: #248a83;
-        border: 1px solid #248a83;
-        text-decoration: none;
-        color: white;
+        @include btn-hover;
       }
     }
   }
@@ -172,24 +169,10 @@
     }
 
     .btn{
-		background: white;
-		border: none;
-		border-radius: 0;
-		color: #000;
-		font-size: .9rem;
-		line-height: 1;
-		padding: .75rem 1.5rem;
-		text-decoration: none;
-		text-transform: uppercase;
-		border: 1px solid #000;
-		letter-spacing:0px;
-        display:inline-block;
+        @include btn-white;
         &:hover{
 
-            background-color: #248a83;
-            border: 1px solid #248a83;
-            text-decoration: none;
-            color: white;
+           @include btn-hover;
         }
     }
   }

@@ -202,7 +202,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     margin-right: 10px; }
 
 .post-template-default .black-btn:hover {
-  background-color: #248a83; }
+  background-color: #248a83;
+  border: 1px solid #248a83;
+  text-decoration: none;
+  color: white; }
 
 .post-template-default .entry-header {
   position: relative;
