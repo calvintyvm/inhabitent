@@ -15,10 +15,10 @@
 	background-color: #248a83;
     border: 1px solid #248a83;
     text-decoration: none;
-	color: white;
+	color: $color-white;
 }
 @mixin btn-white{
-	background: white;
+	background: $color-white;
 	border: none;
 	border-radius: 0;
 	color: #000;
@@ -30,4 +30,5 @@
 	border: 1px solid #000;
 	letter-spacing:0px;
 	display:inline-block;
+	font-family:"Novecento";
 }

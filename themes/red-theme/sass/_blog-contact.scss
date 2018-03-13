@@ -75,7 +75,7 @@
 	}
 	.site-content{
 		display:flex;
-		border: 1px solid #e1e1e1;
+		border:$border-white;
 	
 
 	.black-btn{
@@ -112,13 +112,13 @@
 		a:link {
 		  background-color: #248a83;
 		  font-size: 2.1rem;
-		  color: white;
+		  color: $color-white;
 		  text-decoration: none;
 		  padding: 0;
 		}
 		a:visited {
 		  text-decoration: none;
-		  color: white;
+		  color: $color-white;
 		}
 		a:active {
 		  text-decoration: none;
@@ -129,7 +129,7 @@
 	  }
 	  
 	  .entry-meta{
-		color:white;
+		color:$color-white;
 		background-color: #248a83;
 		position: absolute;
 		right:-14;
@@ -159,7 +159,7 @@
 	display:flex;
 	flex-direction:column;
 
-	border: 1px solid #e1e1e1;
+	border:$border-white;
 	width:100%;
 	text-align:left;
 	padding:50px;
@@ -226,17 +226,17 @@
     font-size: 2.1rem;
     padding: .75rem 1rem;
     width: 500px;
-    color:white;
+    color:$color-white;
             a:link {
               background-color: #248a83;
               font-size: 2.1rem;
-              color: white;
+              color: $color-white;
               text-decoration: none;
               padding: 0;
             }
             a:visited {
               text-decoration: none;
-              color: white;
+              color: $color-white;
             }
             a:active {
               text-decoration: none;
@@ -257,7 +257,7 @@
             padding: 5px 20px;
     
                 a{
-                    color:white;
+                    color:$color-white;
                 }
           }
     
@@ -271,7 +271,7 @@
             display:flex;
             flex-direction:column;
         
-            border: 1px solid #e1e1e1;
+            border:$border-white;
             width:105%;
             text-align:left;
             padding:50px;
@@ -351,7 +351,7 @@
     
         .site-content{
             display:flex;
-            border: 1px solid #e1e1e1;	
+            border:$border-white;	
     }
     
     

@@ -77,11 +77,11 @@ a{
 
 
 		svg{
-			color:white;
+			color:$color-white;
 		}
 
 		a {
-			color: white;
+			color: $color-white;
 		
 		}
 		a:hover{
@@ -102,7 +102,7 @@ a{
 		display: block;
 		// float: left;
 		width: 100%;
-		color:white;
+		color:$color-white;
 	
 		ul {
 			display: none;
@@ -187,7 +187,7 @@ a{
 			justify-content: center;
 			font-size:1rem;
 			text-transform: uppercase;
-			color:white;
+			color:$color-white;
 			font-family:$font-title;
 				
 		
@@ -255,7 +255,7 @@ a{
 
 		.site-content{
 		display:block;
-		border: 1px solid #e1e1e1;
+		border:$border-white;
 
 		
 }
@@ -331,7 +331,7 @@ a{
 }
 
 .product-type-block-wrapper{
-	border: 1px solid #e1e1e1;
+	border:$border-white;
 	margin:10px;
 	border-top-width: 5px;
 	padding:.75rem;
@@ -411,7 +411,7 @@ a{
 	}
 	.black-btn:hover {
 		background: #248a83;
-		color:white;
+		color:$color-white;
 		border:1px solid transparent;
 		
 
@@ -427,7 +427,7 @@ a{
 
 .journal-art{
 
-border: 1px solid #e1e1e1;
+border:$border-white;
 
 }
 
@@ -441,7 +441,7 @@ border: 1px solid #e1e1e1;
 	.buttonReadMoreAdv {
 		text-transform: uppercase;
 		border: 1px solid white;
-		color:white;
+		color:$color-white;
 		font-family:$font-title;
 		
 		background-color: none;
@@ -452,7 +452,7 @@ border: 1px solid #e1e1e1;
 		  background-color: #248a83;
 		  border: 1px solid #248a83;
 		  text-decoration: none;
-		  color: white;
+		  color: $color-white;
 		}
 		
 	  }
@@ -501,7 +501,7 @@ border: 1px solid #e1e1e1;
 	  font-family: $font-main;
 	  text-transform: capitalize;
 	  font-weight: 300;
-	  color: white;
+	  color: $color-white;
 	  text-align: left;
 	  padding-bottom: 3rem;
 	  &:hover{
@@ -580,7 +580,7 @@ border: 1px solid #e1e1e1;
 
 
 	h1{
-		color:white;
+		color:$color-white;
 		position:absolute;
 		top:50%;
 		left:50%;
@@ -650,7 +650,7 @@ border: 1px solid #e1e1e1;
 	
 
 	.site-content{
-		border: 1px solid #e1e1e1;		
+		border:$border-white;		
 	}
 	.menu{
 		a {
@@ -728,7 +728,7 @@ border: 1px solid #e1e1e1;
 	}
 
 	.products-indi{
-		    border: 1px solid #e1e1e1;
+		    border:$border-white;
 		margin-top:3%;
 		
 
@@ -788,7 +788,7 @@ border: 1px solid #e1e1e1;
 		margin-top:12px;
 	}
 	.site-content{
-		border: 1px solid #e1e1e1;
+		border:$border-white;
 	}
 	.menu{
 
@@ -872,7 +872,7 @@ border: 1px solid #e1e1e1;
 
 
 	.site-content{
-		border: 1px solid #e1e1e1;
+		border:$border-white;
 	}
 
 	.post-price-title-con{
@@ -968,7 +968,7 @@ border: 1px solid #e1e1e1;
 
 	}	
 	article{
-		border: 1px solid #e1e1e1;
+		border:$border-white;
 		margin-top:5%;
 	}
 	
@@ -1085,7 +1085,7 @@ margin-bottom:10px;
 		display:flex;
 		flex-direction:column;
 	
-		border: 1px solid #e1e1e1;
+		border:$border-white;
 		width:80%;
 		text-align:left;
 		padding:50px;
@@ -1165,7 +1165,7 @@ a:hover{
 
 	.site-content{
 		display:flex;
-		border: 1px solid #e1e1e1;	
+		border:$border-white;	
 }
 
 .page-title{
@@ -1184,119 +1184,5 @@ a:hover{
 }
 
 }
-
-// .error404{
-
-// 	.site-main{
-// 		margin-left:5%;
-// 		margin-right:5%;
-// 		margin-bottom:10%;
-// 	}
-
-
-// 	.site-content{
-// 		display:flex;
-// 		border: 1px solid #e1e1e1;
-// 	.not-found{
-// 		margin-right:5%;
-// 	}
-
-// 	}
-// 	ul{
-// 		padding:0;
-// 		margin:0;
-// 	}
-// 	li{
-// 		list-style-type: none;
-
-// 	}
-
-// 	.day-of-week{
-// 		font-weight:bold;
-// 	}
-// 	.widget{
-// 		font-size: 1.1rem;
-		
-// 	}
-
-// 	.widget-title{
-// 		font-family:$font-title;
-// 		letter-spacing:2px;
-// 		text-transform:uppercase;
-// 	}
-
-// 	.textwidget{
-
-// 			font-size: 1rem;
-// 			line-height:1.75;
-// 		svg{
-// 			margin-right:10px;
-// 		}
-
-// 	}
-// 	.menu{
-// 		a {
-// 			color: #248a83;
-		
-		
-// 		}
-// 		a:hover{
-
-// 			color:#2f1339;
-// 		}
-// 	}
-
-// 	a{
-// 		color:#248a83;
-// 	}
-// 	a:hover{
-
-// 		color:#2f1339;
-// 	}
-
-
-	
-
-// 	.site-brand{
-// 		position:absolute;
-// 		background: url(../../images/inhabitent-logo-tent.svg) no-repeat;
-// 		background-size: 50px 33px;
-// 		height: 33px;
-// 		overflow: hidden;
-// 		text-indent: 100%;
-// 		white-space: nowrap;
-// 		width: 500px;
-// 		margin-left:85px;
-// 		margin-top:12px;
-// 	}
-// 	.widget-area{
-
-	
-// 		border: 1px solid #e1e1e1;
-// 		margin-left:110px;
-// 		border-top:none;
-// 		border-bottom:none;
-// 		border-right:none;
-// 		text-align:left;
-// 		padding:50px;
-// 		border-top:none;
-// 		border-bottom:none;
-// 	.widget_archive{
-// 		margin-left:60px;
-// 	}
-
-// 	}
-// 	.widget_text { 
-// 		margin-left:60px;
-
-
-// 	}
-// 	.business-hours-widget-class{
-// 		margin-left:60px;
-// 	}
-	
-
-	
-// }
 
 

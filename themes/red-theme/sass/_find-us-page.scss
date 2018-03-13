@@ -27,7 +27,7 @@
         background: #248a83;
         border: none;
         border-radius: 0;
-        color: white;
+        color: $color-white;
         font-size: .9rem;
         line-height: 1;
         padding: .75rem 1.5rem;
@@ -131,7 +131,7 @@
         display:flex;
         flex-direction:column;
         width: 100%;
-        border: 1px solid #e1e1e1;
+        border:$border-white;
 
         text-align:left;
         padding:50px;
@@ -159,7 +159,7 @@ justify-content:space-between;
     .search-field{
         color: #666;
         background-color: #f4f4f4;
-        border: 1px solid #e1e1e1;
+        border:$border-white;
         border-radius: 0;
         height: 30px;
         text-transform:uppercase;
